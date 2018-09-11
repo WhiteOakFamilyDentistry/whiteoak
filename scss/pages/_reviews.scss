@@ -1,0 +1,171 @@
+/* REVIEW SECTION STYLES */
+#reviews {
+	background: url(../images/reviews-bg.jpg) transparent no-repeat 50% 50% / cover;
+	border-top: 1px solid $wht30;
+	padding: 20px 0;
+	header {
+		text-align: center;
+		padding: 10px 5px;
+		max-width: 1170px;
+		margin: 20px auto;
+		border-top: 1px solid $blk10;
+		border-bottom: 1px solid $blk10;
+		@include box-shadow(0 -5px 5px 0 $wht10, 0 5px 5px 0 $wht10);
+		h1 {
+			color: $dkgray;
+			@include font-size(65px, 75px);
+			@include text-shadow($letterpress);
+			margin-top: 10px;
+			@include breakpoint(md) {
+				@include font-size(50px, 60px);
+			}
+			@include breakpoint(sm) {
+				@include font-size(32px, 42px);
+			}
+		}
+		h2 {
+			color: $green;
+			text-transform: uppercase;
+			font-family: $body-font;
+			@include text-shadow($letterpress);
+			letter-spacing: 1px;
+			@include breakpoint(md) {
+				@include font-size(24px, 28px);
+			}
+			@include breakpoint(sm) {
+				@include font-size(18px, 24px);
+			}
+		}
+	}
+	.review-nav {
+		@include flexbox;
+		@include align-items(center);
+		@include justify-content(center);
+		border-radius: 100%;
+		margin: 0;
+		background: $green;
+		color: #fff;
+		width: 50px;
+		height: 50px;
+		z-index: 20;
+		border: 1px solid darken($green, 5%);
+		&:hover {
+			cursor: pointer;
+			@include opacity(.5);
+			@include transition($smooth);
+		}
+		i {
+			@include font-size(24px, 24px);
+		}
+	}
+	.prev-arrow {
+		position: absolute;
+		left: -50px;
+		top: 125px;
+		right: auto;
+	}
+	.next-arrow {
+		position: absolute;
+		right: -50px;
+		top: 125px;
+		left: auto
+	}
+	ul {
+		&.slick-dots {
+			@include flexbox;
+			@include justify-content(center);
+			@inlcude align-items(center);
+			margin: 30px 0 0 0;
+			padding: 0;
+			li {
+				list-style-type: none;
+				margin: 0 5px;
+				&.slick-active {
+					button {
+						background: $green;
+					}
+				}
+			}
+			button {
+				border-radius: 10px;
+				border: none;
+				color: transparent;
+				width: 10px;
+				height: 10px;
+				background: $dkgreen;
+				padding: 0;
+				&:hover {
+					background: $green;
+				}
+			}
+		}
+	}
+	#more-reviews {
+		header {
+			border: none;
+			@include box-shadow(none);
+			@include breakpoint(sm) {
+				padding: 5px;
+			}
+			h3 {
+				font-family: $body-font;
+				color: $dkgreen;
+				@include breakpoint(sm) {
+					@include font-size(20px);
+				}
+			}
+		}
+		#trusted {
+			@include flexbox;
+			@include justify-content(center);
+			@include align-items(center);
+			padding-bottom: 20px;
+			a {
+				@include green-button;
+				font-family: $body-font;
+				text-transform: capitalize;
+				margin: 0 10px;
+				@include breakpoint(sm) {
+					@include font-size(18px);
+				}
+			}
+		}
+	}
+}
+.review {
+	background: #fff;
+	padding: 10px;
+	margin: 10px;
+	position: relative;
+	height: 250px;
+	border: 1px solid $blk20;
+	@include box-shadow(0 0 10px 5px $blk10);
+	.review-info {
+		background: url(../images/featured-bg.jpg) repeat;
+		@include flexbox;
+		@include flex-flow(column);
+		@include justify-content(space-between);
+		@include align-content(space-evenly);
+		height: 100%;
+		width: 100%;
+		border: 1px solid $blk10;
+		padding: 15px;
+	}
+	h3 {
+		@include font-size(20px, 28px);
+		margin: 0;
+		text-align: center;
+		font-weight: 400;
+	}
+	p {
+		@include font-size(14px, 22px);
+		color: $dkgray;
+		@include text-shadow($letterpress);
+		&:last-of-type {
+			color: $brown;
+			@include text-shadow(none);
+			text-align: center;
+			font-family: $heading-font;
+		}
+	}
+}

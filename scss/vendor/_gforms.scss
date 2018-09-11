@@ -1,0 +1,111 @@
+.gform_wrapper {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+	.ginput_container {
+		input, textarea {
+			margin: 5px 0;
+			padding: 10px !important;
+			@include font-size(16px !important);
+			border-radius: 0;
+			background: $green;
+      color: #fff;
+      @include transition($smooth);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+			&:focus {
+        @include transition($smooth);
+        background: $dkgreen;
+        outline: none !important;
+			}
+		}
+    select {
+      @include font-size(16px);
+      font-family: $body-font;
+    }
+	}
+  .top_label {
+    .gfield_label {
+      display: none !important;
+    }
+    .gsection_description {
+      padding-top: 5px;
+      font-family: $body-font;
+      @include font-size(14px);
+    }
+  }
+  h2 {
+    &.gsection_title {
+      color: $dkgreen;
+      @include font-size(22px !important);
+      @include text-shadow($letterpress);
+    }
+  }
+  ul {
+    &.gfield_checkbox {
+      li {
+        label {
+          @include font-size(16px !important);
+          margin-left: 5px;
+          font-family: $heading-font;
+          color: $brown;
+          @include text-shadow($letterpress);
+        }
+      }
+    }
+  }
+	.ginput_complex {
+		label {
+			margin: 0 0 5px 0;
+		}
+	}
+	.gform_footer {
+		padding: 0 15px !important;
+		input[type="submit"] {
+			font-size: 24px !important;
+			@include green-button;
+      max-width: 100% !important;
+		}
+	}
+	button {
+		background: none;
+		border: none;
+	}
+	p, br {
+		display: none;
+	}
+}
+.gform_wrapper .top_label textarea.textarea,
+.gform_wrapper .top_label input.large,
+.gform_wrapper .top_label select.large,
+.gform_wrapper .ginput_complex .ginput_right input[type="text"],
+.gform_wrapper .ginput_complex .ginput_full input[type="text"] {
+    width: 100% !important;
+ }
+ /** CONTROLS STYLING OF PLACEHOLDER TEXT IN CHROME AND SAFARI ***/
+
+ .gform_wrapper input::-webkit-input-placeholder, .gform_wrapper textarea::-webkit-input-placeholder {
+  color: #fff;
+ }
+/***************************************************/
+/****************** RESPONSIVE STYLES **************/
+/***************************************************/
+@media only screen and (max-width: 641px)  {
+  .gform_wrapper {
+    .gform_footer {
+      input[type="submit"] {
+        max-width: 98%;
+        @include font-size(16px !important);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 360px)  {
+  .gform_wrapper {
+    .gform_footer {
+      input[type="submit"] {
+        @include font-size(14px !important);
+        padding: 2px;
+      }
+    }
+  }
+}

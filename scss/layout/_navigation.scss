@@ -1,0 +1,240 @@
+/*************************************************************/
+/********************* NAVIGATION STYLES *********************/
+/*************************************************************/
+
+/*** DESKTOP NAVIGATION ***/
+
+nav {
+  &.navbar {
+    &.navbar-default {
+      div {
+        text-align: right;
+        padding-right: 0;
+      }
+      &.header-nav {
+        ul {
+          &#menu-main-navigation {
+            float: none;
+            margin: 0 auto;
+          }
+        }
+        li {
+          float: none;
+          display: inline-block;
+          &:last-of-type {
+            a {
+              padding-right: 0;
+            }
+          }
+          a {
+            @include font-size(20px);
+            text-transform: uppercase;
+            color: $green;
+            font-family: $heading-font;
+            font-weight: 700;
+            @include transition($smooth);
+            &:hover {
+              color: $dkgreen;
+              @include transition($smooth);
+            }
+          }
+          .dropdown-menu {
+            >li {
+              >a {
+                &:hover {
+                  background: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-nav {
+      >.active {
+        a {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+/*** SLIDEOUT MOBILE NAVIGATION ***/
+
+//MOBILE NAV TOGGLE BAR
+#mobile-slideout {
+  margin-bottom: 75px;
+}
+.mobile-navigation {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 75px;
+  .col-xs-10 {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+// PREVENT FOUC BY HIDING NAV UNTIL AFTER PAGE LOAD
+#mobile-menu:not( .mm-menu ) {
+  display: none;
+}
+//MOBILE NAV TOGGLE LINK CONTAINER
+.slideout-contain {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  text-align: center;
+  justify-content: center;
+}
+//HAMBURGER NAV
+.slideout-show {
+  position: relative;
+  display: block;
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background: $dkgreen;
+    @include opacity(1);
+    left: 0;
+    @include transform(rotate(0deg));
+    @include transition(.25s ease-in-out);
+    &:nth-child(1) {
+      top: -8px;
+      @include transform-origin(left center);
+    }
+    &:nth-child(2) {
+      top: 0;
+      @include transform-origin(left center);
+    }
+    &:nth-child(3) {
+      top: 8px;
+      @include transform-origin(left center);
+    }
+  }
+}
+//ANIMATE HAMBURGER
+.mm-opening {
+  .slideout-show {
+    span {
+      &:nth-child(1) {
+        @include transform(rotate(45deg));
+        top: -12px;
+        left: 4px;
+      }
+      &:nth-child(2) {
+        width: 0%;
+        @include opacity(0);
+      }
+      &:nth-child(3) {
+        @include transform(rotate(-45deg));
+        top: 9px;
+        left: 4px;
+      }
+    }
+  }
+}
+//MOBILE NAVIGATION STYLES
+.container-fluid {
+  &.mm-page {
+    padding: 0;
+  }
+}
+.mm-navbar {
+  background: #fff;
+}
+.mm-listview {
+  li {
+    border-color: rgba(255, 255, 255, 0.3);
+    a {
+      font-family: $heading-font;
+      color: #fff;
+      @include text-shadow($drop);
+      @include transition($smooth);
+      &:hover {
+        background: $brown;
+        @include transition($smooth);
+      }
+    }
+  }
+}
+.mm-panels {
+  background: $green;
+}
+.mm-navbar {
+  background: #fff;
+  a {
+    &.mm-title {
+      color: $dkgreen;
+      font-family: $heading-font;
+      @include font-size(18px);
+      font-weight: 700;
+    }
+  }
+}
+.mm-menu .mm-listview > li .mm-next::after, .mm-menu .mm-btn::before {
+  border-color: #fff;
+}
+.mm-menu .mm-navbar > li .mm-next::after, .mm-menu .mm-btn::before {
+  border-color: $dkgreen;
+}
+/***************************************************/
+/****************** RESPONSIVE STYLES **************/
+/***************************************************/
+
+@media only screen and (max-width: 1199px)  {
+  nav {
+    &.navbar {
+      &.navbar-default {
+        div {
+          text-align: center;
+          padding-right: 15px;
+        }
+        &.header-nav {
+          li {
+            &:last-of-type {
+              a {
+                padding-right: 15px;
+              }
+            }
+            a {
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px)  {
+  nav {
+    &.navbar {
+      &.navbar-default {
+        div {
+          text-align: center;
+          padding-right: 15px;
+        }
+        &.header-nav {
+          li {
+            a {
+              @include font-size(16px);
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/*** THANK YOU PAGE STYLES ***/
+
+#thanks {
+	.container {
+		padding: 30px 15px;
+		text-align: center;
+	}
+	h3 {
+		@include font-size(36px);
+		margin-bottom: 20px;
+	}
+	a {
+		@include green-button;
+		margin: 20px 0;
+	}
+}

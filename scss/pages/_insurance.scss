@@ -1,0 +1,44 @@
+#accepted-insurance {
+	padding-bottom: 50px;
+	#insurance-logos {
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		align-items: center;
+		padding: 20px 0;
+		@include breakpoint(xs) {
+			flex-flow: column;
+		}
+		.insurance {
+			text-align: center;
+			min-width: 25%;
+			@include breakpoint(xs) {
+				min-width: 100%;
+				padding: 5px;
+			}
+		}
+	}
+}
+.understand {
+	padding: 20px;
+	background: $brown;
+	* {
+		color: #fff;
+		text-shadow: none;
+	}
+	a {
+		text-decoration: underline;
+		font-weight: 700;
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+	h3 {
+		text-align: center;
+		margin-top: 0;
+		@include breakpoint(xs) {
+			@include font-size(20px);
+		}
+	}
+}

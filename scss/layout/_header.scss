@@ -1,0 +1,271 @@
+/*** HEADER STYLES ***/
+
+
+#top {
+	background: $green;
+	padding: 10px 0;
+	* {
+		color: #fff;
+		@include text-shadow($drop);
+	}
+	p {
+		font-family: $heading-font;
+		margin-bottom: 0;
+		@include font-size(20px);
+		a {
+			font-style: italic;
+			display: inline-block;
+			margin-left: 10px;
+			@include transition($smooth);
+			&:hover {
+				@include transition($smooth);
+				text-decoration: underline;
+			}
+		}
+	}
+	.col-md-6 {
+		&:last-of-type {
+			text-align: right;
+			padding-right: 0;
+		}
+	}
+}
+#top-nav {
+	background: $dkgreen;
+	margin: -10px 0 10px 0;
+	padding: 5px 0;
+	ul {
+		text-align: right;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			margin-left: 20px;
+			&:first-of-type {
+				&:before {
+					font-family: 'FontAwesome';
+					content: '\f0ea';
+					margin:0 5px 0 -15px;
+				}
+			}
+			&:nth-of-type(2), &:nth-of-type(3) {
+				&:before {
+					font-family: 'FontAwesome';
+					content: '\f155';
+				}
+			}
+			&:nth-of-type(4) {
+				&:before {
+					font-family: 'FontAwesome';
+					content: '\f2c2';
+				}
+			}
+			&:nth-of-type(5) {
+				&:before {
+					font-family: 'FontAwesome';
+					content: '\f0e6';
+				}
+			}
+		}
+		a {
+			@include font-size(14px);
+			padding: 5px;
+			@include transition($smooth);
+			text-transform: uppercase;
+			&:hover {
+				text-decoration: underline;
+				@include transition($smooth);
+			}
+		}
+	}
+}
+#header-container {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: none #fff;
+	z-index: 999;
+	.col-lg-10 {
+		padding: 0;
+	}
+}
+#header-widget {
+	text-align: right;
+	padding: 10px 0;
+	p {
+		padding-top: 10px;
+		color: $green;
+		@include font-size(17px);
+		strong {
+			color: $dkgreen;
+			margin-right: 5px;
+			a {
+				color: $dkgreen;
+			}
+		}
+		i {
+			width: 35px;
+			height: 35px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background: $green;
+			border-radius: 50%;
+			color: #fff;
+			@include font-size(20px);
+			@include transition($smooth);
+			&:hover {
+				@include transition($smooth);
+				background: $gray;
+				color: #000;
+			}
+		}
+	}
+}
+#logo {
+	padding: 10px 0;
+	img {
+		@include transition($smooth);
+		&:hover {
+			@include transition($smooth);
+			@include opacity(.7);
+		}
+	}
+}
+#tablet-contact {
+	text-align: center;
+	background: #fff;
+	margin-bottom: 5px;
+	padding: 5px 0;
+	p {
+		@include font-size(14px);
+		font-family: $body-font;
+		color: $dkgreen;
+		@include text-shadow(none);
+		a, i {
+			color: $dkgreen;
+			@include text-shadow(none);
+		}
+	}
+}
+#mobile-contact {
+	background: $dkgreen;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	clear: both;
+	position: fixed;
+	z-index: 99999;
+	height: 25px;
+	top: 75px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	a {
+		display: inline-flex;
+		align-items: center;
+		@include font-size(16px);
+		font-family: $heading-font;
+		color: #fff;
+		padding: 10px;
+		height: 25px;
+		&:hover {
+			background: #fff;
+			color: $dkgreen;
+		}
+	}
+}
+
+/***************************************************/
+/****************** RESPONSIVE STYLES **************/
+/***************************************************/
+
+@media only screen and (max-width: 1199px)  {
+	#top {
+		padding-top: 0;
+	}
+	#logo {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 991px)  {
+	#top {
+		.col-md-6 {
+			text-align: center;
+			&:last-of-type {
+				text-align: center;
+			}
+		}
+	}
+	#top-nav {
+		ul {
+			text-align: center;
+		}
+	}
+	#header-widget {
+		p {
+			@include font-size(15px);
+		}
+	}
+}
+@media only screen and (max-width: 767px)  {
+	#header-widget, #logo {
+		display: none;
+	}
+	#top {
+		top: 100px;
+		position: fixed;
+		width: 100%;
+		padding: 5px 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		.col-md-6 {
+			padding: 2px 15px;
+			p {
+				@include font-size(16px);
+				margin-bottom: 0;
+			}
+		}
+	}
+	#top-nav {
+		background: #000;
+		margin-top: -5px;
+		ul {
+			li {
+				a {
+					@include font-size(12px);
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 520px)  {
+	#top-nav {
+		ul {
+			li {
+				margin-left: 0;
+				a {
+					@include font-size(10px);
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 400px)  {
+	#top {
+		.col-md-6 {
+			p {
+				@include font-size(12px);
+			}
+		}
+	}
+	#coming-soon {
+		p {
+			@include font-size(12px);
+		}
+	}
+}

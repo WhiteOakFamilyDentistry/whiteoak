@@ -1,0 +1,65 @@
+/*** BASIC BODY STYLES ***/
+
+body {
+  background: none $gray;
+}
+a {
+  &.scrollup {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    z-index: 99999;
+    i {
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      @include font-size(20px);
+      line-height: 100%;
+      @include transition($smooth);
+      &:hover {
+        @include transition($smooth);
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+img {
+  &.border {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+/***************************************************/
+/****************** RESPONSIVE STYLES **************/
+/***************************************************/
+
+@media only screen and (max-width: 1199px)  {
+  a {
+    &.scrollup {
+      right: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 600px)  {
+  img {
+    &.alignleft, &.alignright {
+      float: none;
+      margin: 5px auto;
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width: 550px)  {
+  a {
+    &.scrollup {
+      right: 10px;
+    }
+  }
+}

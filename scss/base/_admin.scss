@@ -1,0 +1,31 @@
+/*** LOGIN PAGE STYLES ***/
+
+body {
+	&.login {
+	}
+}
+.login {
+	h1 {
+		a {
+			width: 150px;
+			height: 150px;
+			background: url(../images/author-logo.png) no-repeat 50% 50%;
+		}
+	}
+}
+#login {
+	p {
+		&#nav, &#backtoblog {
+			a {
+				@include transition($smooth);
+        font-family: $heading-font;
+        color: $green;
+        
+				&:hover {
+					@include transition($smooth);
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

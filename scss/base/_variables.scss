@@ -1,0 +1,33 @@
+/*********************************************************/
+/***********************VARIABLES************************/
+/*******************************************************/
+
+/*** TYPOGRAPHY ***/
+$heading-font: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: "Lato", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*** COLORS ***/
+$green: #68956a;
+$brown: #a39578;
+$dkgreen: #39443d;
+
+$gray: #dadada;
+$dkgray: #39443d;
+
+$wht10: rgba(255, 255, 255, 0.1);
+$wht20: rgba(255, 255, 255, 0.2);
+$wht30: rgba(255, 255, 255, 0.3);
+$wht40: rgba(255, 255, 255, 0.4);
+
+
+$blk10: rgba(0, 0, 0, 0.1);
+$blk20: rgba(0, 0, 0, 0.2);
+$blk30: rgba(0, 0, 0, 0.3);
+$blk50: rgba(0, 0, 0, 0.5);
+
+/*** EFFECTS ***/
+$letterpress: 0 1px rgba(255, 255, 255, 0.5);
+$light-letterpress: 0 1px rgba(255, 255, 255, 0.3);
+$drop: 0 1px 1px rgba(0, 0, 0, 0.8);
+$smooth: all, .15s, ease-in-out, .5s;
+$slow: all, 2s, ease-in-out, 2s;

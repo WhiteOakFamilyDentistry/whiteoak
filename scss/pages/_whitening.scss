@@ -1,0 +1,32 @@
+
+#whitening {
+	#main-content {
+		padding-bottom: 0;
+	}
+}
+#opal {
+	background: none #fff;
+	margin: 30px auto -20px auto;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	.col-md-5 {
+		min-height: 400px;
+		background: url(../images/opalescence-models.jpg) no-repeat top left;
+		@include background-size(cover);
+		border-right: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	.col-md-7 {
+		padding: 30px;
+		h1 {
+			padding-bottom: 15px;
+			text-align: center;
+			color: $green;
+			sup {
+				@include font-size(16px);
+			}
+		}
+		img {
+			margin-top: 30px;
+		}
+	}
+}

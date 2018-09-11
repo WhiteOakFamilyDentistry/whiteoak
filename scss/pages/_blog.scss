@@ -1,0 +1,299 @@
+/*** ARTICLE PAGE STYLES ***/
+
+//BLOGROLL STYLES
+.blog-post {
+	padding: 30px 15px;
+	h2 {
+		text-align: center;
+		a {
+			color: $green;
+			@include transition($smooth);
+			@include text-shadow($letterpress);
+			&:hover {
+				@include transition($smooth);
+				color: $dkgreen;
+			}
+		}
+	}
+	.postmeta {
+		text-align: center;
+		padding: 10px 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		@include font-size(14px);
+		a {
+			color: $dkgreen;
+			font-weight: 700;
+			@include transition($smooth);
+			&:hover {
+				@include transition($smooth);
+				color: $green;
+			}
+		}
+	}
+	img {
+		background: #fff;
+		padding: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	.post {
+		margin-bottom: 40px;
+		padding: 15px;
+		background: rgba(255, 255, 255, 0.3);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		.moretag {
+			display: block;
+			color: $green;
+			padding: 15px 0 0 0;
+			@include text-shadow($letterpress);
+			@include transition($smooth);
+			&:hover {
+				@include transition($smooth);
+				color: $dkgreen;
+			}
+		}
+	}
+}
+//PAGINATION STYLES
+.page_nav {
+	font-family: $heading-font;
+	font-weight: 700;
+	@include font-size(16px);
+	color: $brown;
+	a {
+		color: $green;
+		background: #fff;
+		display: inline-block;
+		padding: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		@include transition($smooth);
+		&:hover {
+			@include transition($smooth);
+			background: $brown;
+			color: #fff;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+		}
+	}
+}
+//BLOG SIDEBAR & WIDGETS
+#blog-sidebar {
+	h3 {
+		text-align: center;
+	}
+	.widget {
+		margin-bottom: 30px;
+	}
+}
+#recent-posts-2, #categories-2, #archives-2 {
+	background: #fff;
+	border: 1px solid $green;
+	h3 {
+		background: $green;
+		padding: 10px 0;
+		margin: 0;
+		color: #fff;
+		text-align: center;
+		@include text-shadow($drop);
+	}
+	ul {
+		padding: 20px 20px 0 20px;
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+			&:last-of-type {
+				border: none;
+			}
+			a {
+				font-family: $heading-font;
+				color: $green;
+				@include font-size(18px);
+				padding: 5px 0;
+				display: block;
+				@include transition($smooth);
+				&:hover {
+					@include transition($smooth);
+					color: $dkgreen;
+				}
+			}
+		}
+	}
+}
+#nav_menu-3 {
+	ul {
+		text-align: center;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 0;
+		margin: 0;
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		li {
+			width: 50%;
+			list-style-type: none;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			&:nth-of-type(odd) {
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+			}
+			&:nth-last-child(-n+2) {
+				border-bottom: none;
+			}
+			a {
+				font-family: $heading-font;
+				@include font-size(16px);
+				padding: 5px;
+				display: block;
+				color: $green;
+				@include text-shadow($letterpress);
+				@include transition($smooth);
+				&:hover {
+					@include transition($smooth);
+					background: #fff;
+					color: $dkgreen;
+					@include text-shadow(none);
+				}
+			}
+		}
+	}
+}
+.wp-video {
+	iframe {
+		padding: 10px;
+		background: #fff;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+}
+//SINGLE POST STYLES
+.single-blog {
+	header {
+		text-align: center;
+		max-width: 1170px;
+		margin: 30px auto;
+		padding: 20px 5px;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		@include box-shadow(0 -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 0 rgba(255, 255, 255, 0.5));
+		h2 {
+			color: $green;
+			@include text-shadow($letterpress);
+			@include font-size(36px);
+			margin-top: 0;
+		}
+		h3 {
+			margin-bottom: 0;
+			font-family: $body-font;
+			color: $dkgray;
+			@include font-size(16px);
+			font-weight: 400;
+			@include text-shadow(none);
+			a {
+				color: $green;
+				&:hover {
+					color: $brown;
+				}
+			}
+		}
+	}
+}
+.article {
+	background: #fff;
+	padding: 10px;
+	margin: 20px auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	@include box-shadow(0 0 10px 5px rgba(0, 0, 0, 0.1));
+	div {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 40px;
+	}
+	p {
+		a {
+			font-weight: 700;
+			color: $green;
+			&:hover {
+				color: $dkgreen;
+			}
+		}
+	}
+}
+.author-bio {
+	margin: 30px auto 50px auto;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	@include box-shadow(0 -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 0 rgba(255, 255, 255, 0.5));
+	padding: 20px 5px;
+}
+/***************************************************/
+/****************** RESPONSIVE STYLES **************/
+/***************************************************/
+@media only screen and (max-width: 767px)  {
+  .single-blog {
+    header {
+      h2 {
+        @include font-size(28px);
+      }
+      h3 {
+        @include font-size(14px);
+        margin-top: 0;
+      }
+    }
+  }
+  .author-bio {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px)  {
+  .blog-post {
+    .postmeta {
+      @include font-size(12px);
+    }
+    .moretag {
+      text-align: center;
+    }
+    img {
+      display: none;
+    }
+  }
+  .single-blog {
+    header {
+      h2 {
+        @include font-size(22px);
+      }
+      h3 {
+        @include font-size(12px);
+      }
+    }
+  }
+  .postmeta {
+    line-height: 130%;
+  }
+  .article {
+    div {
+      padding: 15px;
+    }
+    h3 {
+      @include font-size(18px);
+    }
+  }
+  .author-bio {
+    margin: 20px auto;
+    h3 {
+      @include font-size(22px);
+    }
+  }
+}
+@media only screen and (max-width: 375px)  {
+  .single-blog {
+    header {
+      padding: 10px;
+      h2 {
+        @include font-size(20px);
+        line-height: 130%;
+      }
+      h3 {
+        @include font-size(12px);
+      }
+    }
+  }
+}

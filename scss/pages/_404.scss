@@ -1,0 +1,9 @@
+/*** 404 PAGE STYLES ***/
+
+.not-found {
+  padding: 30px 0;
+  a {
+    @include green-button;
+    margin-top: 20px;
+  }
+}

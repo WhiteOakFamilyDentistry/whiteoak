@@ -1,0 +1,204 @@
+/*** INNER PAGE TEMPLATE STYLES ***/
+#hero {
+	&.inner-page {
+		height: 250px;
+    @include breakpoint(lg) {
+      margin-top: 235px;
+    }
+    @include breakpoint(sm) {
+      height: auto;
+      margin-top: 150px;
+    }
+    @include breakpoint(0, 767px) {
+      height: auto;
+      margin-top: 115px;
+    }
+    &.dark {
+      h1, h2 {
+        color: #000;
+        @include text-shadow($letterpress);
+      }
+    }
+		h1 {
+      @include font-size(60px);
+      @include breakpoint(lg) {
+        @include font-size(45px);
+      }
+      @include breakpoint(md) {
+        @include font-size(32px);
+      }
+      @include breakpoint(sm) {
+        @include font-size(26px);
+      }
+      @include breakpoint(359px, 375px) {
+        @include font-size(22px);
+      }
+      @include breakpoint(0, 359px) {
+        @include font-size(18px, 24px);
+      }
+    }
+    h2 {
+      @include font-size(32px);
+      font-weight: 400;
+      @include breakpoint(lg) {
+        @include font-size(28px);
+      }
+      @include breakpoint(md) {
+        @include font-size(22px);
+      }
+      @include breakpoint(sm) {
+        @include font-size(18px);
+      }
+    }
+	}
+	&.inner {
+		background: url(../images/hero-inner.jpg) no-repeat 50% 50%;
+		@include background-size(cover);
+	}
+}
+.breadcrumb {
+	@include font-size(16px);
+	color: $dkgreen;
+	a {
+		color: $green;
+		@include text-shadow($light-letterpress);
+		&:hover {
+			color: #fff;
+			@include text-shadow($drop);
+		}
+	}
+}
+#main-content {
+	padding-bottom: 30px;
+  p {
+    a {
+      color: $green;
+      font-weight: 700;
+      @include transition($smooth);
+      &:hover {
+        @include transition($smooth);
+        color: #000;
+      }
+    }
+    strong {
+      color: $brown;
+      @include text-shadow($letterpress);
+    }
+  }
+  h3 {
+    line-height: 130%;
+  }
+  ul {
+    padding: 10px 20px;
+    li {
+      @include font-size(20px);
+      color: $dkgreen;
+      font-weight: 700;
+      @include text-shadow($letterpress);
+      font-family: $heading-font;
+    }
+  }
+}
+#side-stuff {
+	margin-top: 20px;
+	img {
+		margin-bottom: 10px;
+	}
+}
+#inner-sidebar {
+	margin-top: 20px;
+	h3 {
+		background: $green;
+		padding: 10px 0;
+		margin: 0;
+		color: #fff;
+		text-align: center;
+		@include text-shadow($drop);
+	}
+	ul {
+		text-align: center;
+		background: #fff;
+		border: 1px solid $green;
+		padding: 0;
+		margin: 0 0 5px 0;
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		li {
+			width: 50%;
+			list-style-type: none;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			&:nth-of-type(odd) {
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+			}
+			&:nth-last-child(-n+2) {
+				border-bottom: none;
+			}
+			a {
+				font-family: $heading-font;
+				@include font-size(16px);
+				padding: 5px;
+				display: block;
+				color: $green;
+				@include text-shadow($letterpress);
+				@include transition($smooth);
+				&:hover {
+					@include transition($smooth);
+					background: $brown;
+					color: #fff;
+					@include text-shadow($drop);
+				}
+			}
+		}
+	}
+	.widget_media_video {
+		h3 {
+			background: none;
+			color: $green;
+			margin: 0 0 5px 0;
+			@include text-shadow($letterpress);
+		}
+	}
+}
+/***************************************************/
+/****************** RESPONSIVE STYLES **************/
+/***************************************************/
+
+
+@media only screen and (max-width: 480px)  {
+  #hero {
+    &.inner-page {
+      height: auto;
+      padding: 20px 0;
+      h1 {
+        @include font-size(26px);
+      }
+      h2 {
+        @include font-size(18px);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px)  {
+  #hero {
+    &.inner-page {
+      h1 {
+        @include font-size(22px);
+      }
+      h2 {
+        @include font-size(14px);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 359px)  {
+  #hero {
+    &.inner-page {
+      h1 {
+        @include font-size(18px);
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+[11-Feb-2018 00:08:28 UTC] PHP Fatal error:  Call to undefined function is_single() in /home/whiteo22/public_html/wp-content/themes/whiteoak/comments.php on line 1
+[11-Feb-2018 00:08:30 UTC] PHP Fatal error:  Call to undefined function is_single() in /home/whiteo22/public_html/wp-content/themes/whiteoak/comments.php on line 1
+[17-Mar-2018 10:41:35 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/whiteo22/public_html/wp-content/themes/whiteoak/404.php on line 1
+[17-Mar-2018 10:41:36 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/whiteo22/public_html/wp-content/themes/whiteoak/404.php on line 1
+[29-Mar-2018 05:02:44 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home/whiteo22/public_html/wp-content/themes/whiteoak/header.php on line 2
+[29-Mar-2018 08:56:31 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/whiteo22/public_html/wp-content/themes/whiteoak/index.php on line 1
+[29-Mar-2018 08:56:32 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/whiteo22/public_html/wp-content/themes/whiteoak/index.php on line 1
+[07-May-2018 02:30:54 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/whiteo22/public_html/wp-content/themes/whiteoak/404.php on line 1

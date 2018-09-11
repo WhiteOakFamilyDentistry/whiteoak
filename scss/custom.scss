@@ -1,0 +1,34 @@
+/*** SITEWIDE VARIBLES, MIXINS & STYLE RESET  ***/
+@import "base/bootstrap"; //BOOTSTRAP STYLES
+@import "base/variables"; //VARIABLE IMPORT
+@import "base/mixins"; //MIXINS IMPORT
+@import "base/reset"; //RESET IMPORT
+
+/*** JQUERY & PLUGIN STYLES ***/
+@import "vendor/gforms"; //GRAVITY FORMS STYLE RESET
+@import "vendor/fancybox"; //FANCYBOX STYLES
+@import "vendor/slick"; //SLICK SLIDER STYLES
+@import "vendor/mmenu"; //MMENU STYLES
+
+/** HOVER & HAMBURGER IMPORT ***/
+//@import "hover/hover-effects"; //HOVER IMPORT
+
+/*** ADMIN STYLES ***/
+@import "base/admin";
+
+/*** SITE STRUCTURE STYLES ***/
+@import "layout/typography"; //GLOBAL TYPOGRAPHY STYLES
+@import "layout/header"; //HEADER STYLES
+@import "layout/navigation"; //NAVIGATION STYLES
+@import "layout/body"; //MAIN BODY CONTENT STYLES
+@import "layout/footer"; //FOOTER STYLES
+
+/*** INDIVIDUAL PAGE STYLES ***/
+@import "pages/home"; //HOMEPAGE STYLES
+@import "pages/inner"; //INNER PAGE TEMPLATE STYLES
+@import "pages/thanks"; //THANK YOU PAGE STYLES
+@import "pages/404"; //404 ERROR PAGE STYLES
+@import "pages/blog"; //BLOG PAGE STYLES
+@import "pages/insurance"; //ACCEPTED INSURANCE PAGE STYLES
+@import "pages/whitening"; //WHITENING PAGE STYLES
+@import "pages/reviews"; //WHITENING PAGE STYLES
