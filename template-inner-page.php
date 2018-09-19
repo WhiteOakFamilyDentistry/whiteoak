@@ -5,15 +5,33 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part('partials/template-part', 'head'); ?>
-<section id="hero" class="<?php the_field('hero_image') ;?> inner-page">
-	<header>
-		<h1><?php the_field('h1_tag') ;?></h1>
-		<?php if( get_field( "h2_tag" ) ): ?>
-		<h2><?php the_field('h2_tag') ;?></h2>
-		<?php endif; ?>
-	</header>
-</section>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- HERO IMAGE -->
+<?php
+
+//vars
+$hero_image = get_field( 'hero_image' );
+$size = 'full';
+$hero = wp_get_attachment_image_src( $hero_image, $size);
+$h1 = get_field( 'h1_tag' );
+$h2 = get_field( 'h2_tag' );
+
+if( $hero_image ) {
+	echo '<section id="hero" style="background: url( ' .$hero[0]. ' ) transparent 50% 50% / cover;">';
+} else {
+	echo '<section id="hero" class="inner">';
+}
+?>
+  <header>
+		<h1><?php echo $h1; ?></h1>
+		<?php if( $h2 ): ?>
+		<h2><?php echo $h2;?></h2>
+		<?php endif; ?>
+  </header>
+</section>
+<!-- HERO IMAGE -->
+
+
 <section id="main-content">
 	<article class="container">
 		<h2 class="breadcrumb"><?php get_breadcrumb(); ?></h2>

@@ -41,6 +41,9 @@
 		li {
 			display: inline-block;
 			margin-left: 20px;
+			@include breakpoint(md) {
+				margin-left: 10px;
+			}
 			&:first-of-type {
 				&:before {
 					font-family: 'FontAwesome';
@@ -72,6 +75,9 @@
 			padding: 5px;
 			@include transition($smooth);
 			text-transform: uppercase;
+			@include breakpoint(md) {
+				@include font-size(12px);
+			}
 			&:hover {
 				text-decoration: underline;
 				@include transition($smooth);
@@ -88,6 +94,19 @@
 	left: 0;
 	background: none #fff;
 	z-index: 999;
+	height: 210px;
+	@include breakpoint(lg) {
+		height: 275px;
+	}
+	@include breakpoint(md) {
+		height: 300px;
+	}
+	@include breakpoint(sm) {
+		height: 165px;
+	}
+	@include breakpoint(0, 400px) {
+		height: 153px;
+	}
 	.col-lg-10 {
 		padding: 0;
 	}
@@ -180,6 +199,85 @@
 		}
 	}
 }
+
+#hero {
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	width: 100%;
+	margin-top: 210px;
+	height: 250px;
+	@include breakpoint(lg) {
+		margin-top: 275px;
+	}
+	@include breakpoint(sm) {
+		height: auto;
+		margin-top: 165px;
+		padding: 20px 0;
+	}
+	@include breakpoint(0, 400px) {
+		margin-top: 153px;
+	}
+	* {
+		color: #fff;
+		@include text-shadow($drop);
+	}
+	header {
+		margin: 0 auto;
+		max-width: 1170px;
+		text-align: center;
+		@include flexbox;
+		@include flex-flow(column);
+		@include justify-content(center);
+		@include align-items(center);
+		@include breakpoint(sm) {
+			padding: 0 5px;
+		}
+		h1, h2 {
+			margin-top: 0;
+		}
+	}
+	h2 {
+		font-family: $body-font;
+	}
+	h1 {
+		@include font-size(60px);
+		@include breakpoint(lg) {
+			@include font-size(45px);
+		}
+		@include breakpoint(md) {
+			@include font-size(32px);
+		}
+		@include breakpoint(sm) {
+			@include font-size(26px);
+		}
+		@include breakpoint(359px, 375px) {
+			@include font-size(22px);
+		}
+		@include breakpoint(0, 359px) {
+			@include font-size(18px, 24px);
+		}
+	}
+	h2 {
+		@include font-size(32px);
+		font-weight: 400;
+		@include breakpoint(lg) {
+			@include font-size(28px);
+		}
+		@include breakpoint(md) {
+			@include font-size(22px);
+		}
+		@include breakpoint(sm) {
+			@include font-size(18px);
+		}
+	}
+}
+
+
+
+
+
+
 
 /***************************************************/
 /****************** RESPONSIVE STYLES **************/

@@ -1,39 +1,62 @@
 /*** HOMEPAGE STYLES ***/
 
+
 #hero {
-	margin-top: 170px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	* {
-		color: #fff;
-		@include text-shadow($drop);
-	}
-	header {
-		margin: 0 auto;
-		max-width: 1170px;
-	}
-	h2 {
-		font-family: $body-font;
-	}
 	&.home {
 		background: url(../images/hero-home.jpg) no-repeat 50% 100%;
 		@include background-size(cover);
 		height: 475px;
 		h1 {
 			@include font-size(75px);
+			@include breakpoint(855px, 1065px) {
+				@include font-size(60px);
+			}
+			@include breakpoint(767px, 855px) {
+				@include font-size(42px);
+			}
+			@include breakpoint(610px, 767px) {
+				@include font-size(32px);
+			}
+			@include breakpoint(480px, 610px) {
+				@include font-size(26px);
+			}
+			@include breakpoint(0, 480px) {
+				@include font-size(20px);
+			}
 		}
 		h2 {
 			text-transform: uppercase;
 			@include font-size(42px);
 			font-weight: 400;
+			@include breakpoint(995px, 1065px) {
+				@include font-size(36px);
+			}
+			@include breakpoint(767px, 855px) {
+				@include font-size(28px);
+			}
+			@include breakpoint(610px, 767px) {
+				@include font-size(22px);
+			}
+			@include breakpoint(480px, 610px) {
+				@include font-size(16px);
+			}
+			@include breakpoint(0, 480px) {
+				@include font-size(12px);
+				margin-top: 5px;
+			}
 		}
 	}
 }
 #home-content {
 	padding: 40px 0;
+	@include breakpoint(sm) {
+		padding: 10px 0;
+	}
 	h3 {
 		text-align: center;
+		@include breakpoint(0, 375px) {
+			@include font-size(18px);
+		}
 	}
 	.col-md-6 {
 		p {
@@ -51,6 +74,14 @@
 		background: $brown;
 		padding: 15px;
 		margin-top: 40px;
+		@include breakpoint(md) {
+			margin-top: 10px;
+		}
+		@include breakpoint(0, 375px) {
+			a {
+				@include font-size(18px);
+			}
+		}
 		* {
 			color: #fff;
 			@include text-shadow($drop);
@@ -63,6 +94,16 @@
 				padding: 20px;
 				border: 1px solid rgba(0, 0, 0, 0.1);
 				@include box-shadow(0 0 1px 1px rgba(255, 255, 255, 0.2));
+				@include breakpoint(md) {
+					h3 {
+						@include font-size(20px, 150%);
+					}
+				}
+				@include breakpoint(0, 480px) {
+					h3 {
+						margin-top: 0;
+					}
+				}
 				a {
 					&:hover {
 						text-decoration: underline;
@@ -74,117 +115,6 @@
 			a {
 				@include green-button;
 				margin-top: 20px;
-			}
-		}
-	}
-}
-/***************************************************/
-/****************** RESPONSIVE STYLES **************/
-/***************************************************/
-
-@media only screen and (max-width: 1199px)  {
-	#hero {
-    &.home {
-		  margin-top: 150px;
-    }
-	}
-}
-@media only screen and (max-width: 1065px)  {
-	#hero {
-		&.home {
-			h1 {
-				@include font-size(60px);
-			}
-			h2 {
-				@include font-size(36px);
-			}
-		}
-	}
-}
-@media only screen and (max-width: 995px)  {
-	.home-schedule {
-		h3 {
-			@include font-size(20px);
-			line-height: 150%;
-		}
-	}
-	#home-content {
-		.col-md-12 {
-			margin-top: 10px;
-		}
-	}
-}
-@media only screen and (max-width: 855px)  {
-	#hero {
-		&.home {
-			h1 {
-				@include font-size(42px);
-			}
-			h2 {
-				@include font-size(28px);
-			}
-		}
-	}
-}
-@media only screen and (max-width: 767px)  {
-	#hero {
-		&.home {
-			height: auto;
-			padding: 20px 0;
-		}
-	}
-	#home-content {
-		padding: 10px 0;
-	}
-}
-@media only screen and (max-width: 610px)  {
-	#hero {
-		&.home {
-			h1 {
-				@include font-size(32px);
-			}
-			h2 {
-				@include font-size(22px);
-			}
-		}
-	}
-}
-@media only screen and (max-width: 480px)  {
-	#hero {
-		&.home {
-			h1 {
-				@include font-size(26px);
-			}
-			h2 {
-				@include font-size(16px);
-			}
-		}
-	}
-	.home-schedule {
-		h3 {
-			margin-top: 0;
-		}
-	}
-}
-@media only screen and (max-width: 375px)  {
-	#hero {
-		&.home {
-			h1 {
-				@include font-size(22px);
-			}
-			h2 {
-				@include font-size(14px);
-				margin-top: 5px;
-			}
-		}
-	}
-	#home-content {
-		h3 {
-			@include font-size(18px);
-		}
-		.col-md-12 {
-			a {
-				@include font-size(18px);
 			}
 		}
 	}

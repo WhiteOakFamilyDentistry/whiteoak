@@ -1,53 +1,11 @@
 /*** INNER PAGE TEMPLATE STYLES ***/
 #hero {
 	&.inner-page {
-		height: 250px;
-    @include breakpoint(lg) {
-      margin-top: 235px;
-    }
-    @include breakpoint(sm) {
-      height: auto;
-      margin-top: 150px;
-    }
-    @include breakpoint(0, 767px) {
-      height: auto;
-      margin-top: 115px;
-    }
+		
     &.dark {
       h1, h2 {
         color: #000;
         @include text-shadow($letterpress);
-      }
-    }
-		h1 {
-      @include font-size(60px);
-      @include breakpoint(lg) {
-        @include font-size(45px);
-      }
-      @include breakpoint(md) {
-        @include font-size(32px);
-      }
-      @include breakpoint(sm) {
-        @include font-size(26px);
-      }
-      @include breakpoint(359px, 375px) {
-        @include font-size(22px);
-      }
-      @include breakpoint(0, 359px) {
-        @include font-size(18px, 24px);
-      }
-    }
-    h2 {
-      @include font-size(32px);
-      font-weight: 400;
-      @include breakpoint(lg) {
-        @include font-size(28px);
-      }
-      @include breakpoint(md) {
-        @include font-size(22px);
-      }
-      @include breakpoint(sm) {
-        @include font-size(18px);
       }
     }
 	}

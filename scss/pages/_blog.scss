@@ -97,7 +97,7 @@
 		@include text-shadow($drop);
 	}
 	ul {
-		padding: 20px 20px 0 20px;
+		padding: 10px 20px 0 20px;
 		li {
 			list-style-type: none;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -105,10 +105,10 @@
 				border: none;
 			}
 			a {
-				font-family: $heading-font;
+				font-family: $body-font;
 				color: $green;
-				@include font-size(18px);
-				padding: 5px 0;
+				@include font-size(14px);
+				padding: 10px 0;
 				display: block;
 				@include transition($smooth);
 				&:hover {
@@ -116,6 +116,80 @@
 					color: $dkgreen;
 				}
 			}
+		}
+	}
+}
+#gform_widget-2 {
+	background: none #fff;
+	border-radius: 5px;
+	border: 1px solid $blk30;
+	.gform_wrapper {
+		border: none;
+		margin: 0;
+		padding-top: 0;
+		ul {
+			&.gform_fields {
+				li {
+					&.gfield {
+						padding-right: 0;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+		input, textarea {
+			background: $gray;
+			color: #000 !important;
+			border: 1px solid $blk30;
+			@include font-size(12px !important);
+		}
+		textarea {
+			margin-top: 10px;
+		}
+		.top_label {
+			div {
+				&.ginput_container {
+					margin-top: 0;
+				}
+			}
+			li {
+				&.gfield {
+					&.gf_left_half {
+						padding-right: 5px;
+					}
+				}
+			}
+		}
+		.ginput_container {
+			select {
+				@include font-size(12px);
+				margin-top: 5px;
+			}
+		}
+		input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+			color: #000;
+		}
+	}
+	h3 {
+		margin: 0;
+		padding: 10px 0;
+	}
+	.gform_footer {
+		padding: 0 15px !important;
+		@include flexbox;
+		@include align-items(center);
+		@incude justify-content(center);
+		input[type="submit"] {
+			@include font-size(12px !important);
+			@include green-button;
+			background: $green;
+			color: #fff !important;
+			line-height: 100%;
+      max-width: 100% !important;
+      margin: 0 auto;
+      &:hover {
+      	color: #000 !important;
+      }
 		}
 	}
 }
@@ -195,6 +269,9 @@
 				}
 			}
 		}
+	}
+	p {
+		margin-bottom: 20px;
 	}
 }
 .article {

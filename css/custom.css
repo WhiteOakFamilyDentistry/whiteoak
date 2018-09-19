@@ -8881,7 +8881,7 @@ p {
   font-family: "Lato", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.43;
+  line-height: 160%;
   color: #39443d;
   font-weight: 400; }
 
@@ -8984,6 +8984,9 @@ a.block-link {
     #top-nav ul li {
       display: inline-block;
       margin-left: 20px; }
+      @media (max-width: 991px) {
+        #top-nav ul li {
+          margin-left: 10px; } }
       #top-nav ul li:first-of-type:before {
         font-family: 'FontAwesome';
         content: '\f0ea';
@@ -9008,6 +9011,11 @@ a.block-link {
       -o-transition: all, 0.15s, ease-in-out, 0.5s;
       transition: all, 0.15s, ease-in-out, 0.5s;
       text-transform: uppercase; }
+      @media (max-width: 991px) {
+        #top-nav ul a {
+          font-size: 12px;
+          font-size: 0.75rem;
+          line-height: 1.43; } }
       #top-nav ul a:hover {
         text-decoration: underline;
         -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
@@ -9024,7 +9032,20 @@ a.block-link {
   right: 0;
   left: 0;
   background: none #fff;
-  z-index: 999; }
+  z-index: 999;
+  height: 210px; }
+  @media (max-width: 1199px) {
+    #header-container {
+      height: 275px; } }
+  @media (max-width: 991px) {
+    #header-container {
+      height: 300px; } }
+  @media (max-width: 767px) {
+    #header-container {
+      height: 165px; } }
+  @media (max-width: 400px) {
+    #header-container {
+      height: 153px; } }
   #header-container .col-lg-10 {
     padding: 0; }
 
@@ -9137,6 +9158,121 @@ a.block-link {
     #mobile-contact a:hover {
       background: #fff;
       color: #39443d; }
+
+#hero {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 210px;
+  height: 250px; }
+  @media (max-width: 1199px) {
+    #hero {
+      margin-top: 275px; } }
+  @media (max-width: 767px) {
+    #hero {
+      height: auto;
+      margin-top: 165px;
+      padding: 20px 0; } }
+  @media (max-width: 400px) {
+    #hero {
+      margin-top: 153px; } }
+  #hero * {
+    color: #fff;
+    -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    -ms-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    -o-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
+  #hero header {
+    margin: 0 auto;
+    max-width: 1170px;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      #hero header {
+        padding: 0 5px; } }
+    #hero header h1, #hero header h2 {
+      margin-top: 0; }
+  #hero h2 {
+    font-family: "Lato", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #hero h1 {
+    font-size: 60px;
+    font-size: 3.75rem;
+    line-height: 1.43; }
+    @media (max-width: 1199px) {
+      #hero h1 {
+        font-size: 45px;
+        font-size: 2.8125rem;
+        line-height: 1.43; } }
+    @media (max-width: 991px) {
+      #hero h1 {
+        font-size: 32px;
+        font-size: 2rem;
+        line-height: 1.43; } }
+    @media (max-width: 767px) {
+      #hero h1 {
+        font-size: 26px;
+        font-size: 1.625rem;
+        line-height: 1.43; } }
+    @media (min-width: 359px) and (max-width: 375px) {
+      #hero h1 {
+        font-size: 22px;
+        font-size: 1.375rem;
+        line-height: 1.43; } }
+    @media (max-width: 359px) {
+      #hero h1 {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 24px; } }
+  #hero h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.43;
+    font-weight: 400; }
+    @media (max-width: 1199px) {
+      #hero h2 {
+        font-size: 28px;
+        font-size: 1.75rem;
+        line-height: 1.43; } }
+    @media (max-width: 991px) {
+      #hero h2 {
+        font-size: 22px;
+        font-size: 1.375rem;
+        line-height: 1.43; } }
+    @media (max-width: 767px) {
+      #hero h2 {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.43; } }
 
 /***************************************************/
 /****************** RESPONSIVE STYLES **************/
@@ -10495,46 +10631,88 @@ img.border {
 
 /*** INDIVIDUAL PAGE STYLES ***/
 /*** HOMEPAGE STYLES ***/
-#hero {
-  margin-top: 170px;
-  display: flex;
-  align-items: center;
-  text-align: center; }
-  #hero * {
-    color: #fff;
-    -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-    -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-    -ms-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-    -o-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
-  #hero header {
-    margin: 0 auto;
-    max-width: 1170px; }
-  #hero h2 {
-    font-family: "Lato", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  #hero.home {
-    background: url(../images/hero-home.jpg) no-repeat 50% 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 475px; }
-    #hero.home h1 {
-      font-size: 75px;
-      font-size: 4.6875rem;
-      line-height: 1.43; }
-    #hero.home h2 {
-      text-transform: uppercase;
-      font-size: 42px;
-      font-size: 2.625rem;
-      line-height: 1.43;
-      font-weight: 400; }
+#hero.home {
+  background: url(../images/hero-home.jpg) no-repeat 50% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 475px; }
+  #hero.home h1 {
+    font-size: 75px;
+    font-size: 4.6875rem;
+    line-height: 1.43; }
+    @media (min-width: 855px) and (max-width: 1065px) {
+      #hero.home h1 {
+        font-size: 60px;
+        font-size: 3.75rem;
+        line-height: 1.43; } }
+    @media (min-width: 767px) and (max-width: 855px) {
+      #hero.home h1 {
+        font-size: 42px;
+        font-size: 2.625rem;
+        line-height: 1.43; } }
+    @media (min-width: 610px) and (max-width: 767px) {
+      #hero.home h1 {
+        font-size: 32px;
+        font-size: 2rem;
+        line-height: 1.43; } }
+    @media (min-width: 480px) and (max-width: 610px) {
+      #hero.home h1 {
+        font-size: 26px;
+        font-size: 1.625rem;
+        line-height: 1.43; } }
+    @media (max-width: 480px) {
+      #hero.home h1 {
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 1.43; } }
+  #hero.home h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-size: 2.625rem;
+    line-height: 1.43;
+    font-weight: 400; }
+    @media (min-width: 995px) and (max-width: 1065px) {
+      #hero.home h2 {
+        font-size: 36px;
+        font-size: 2.25rem;
+        line-height: 1.43; } }
+    @media (min-width: 767px) and (max-width: 855px) {
+      #hero.home h2 {
+        font-size: 28px;
+        font-size: 1.75rem;
+        line-height: 1.43; } }
+    @media (min-width: 610px) and (max-width: 767px) {
+      #hero.home h2 {
+        font-size: 22px;
+        font-size: 1.375rem;
+        line-height: 1.43; } }
+    @media (min-width: 480px) and (max-width: 610px) {
+      #hero.home h2 {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.43; } }
+    @media (max-width: 480px) {
+      #hero.home h2 {
+        font-size: 12px;
+        font-size: 0.75rem;
+        line-height: 1.43;
+        margin-top: 5px; } }
 
 #home-content {
   padding: 40px 0; }
+  @media (max-width: 767px) {
+    #home-content {
+      padding: 10px 0; } }
   #home-content h3 {
     text-align: center; }
+    @media (max-width: 375px) {
+      #home-content h3 {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.43; } }
   #home-content .col-md-6 p a {
     color: #39443d;
     font-weight: 700; }
@@ -10544,6 +10722,14 @@ img.border {
     background: #a39578;
     padding: 15px;
     margin-top: 40px; }
+    @media (max-width: 991px) {
+      #home-content .col-md-12 {
+        margin-top: 10px; } }
+    @media (max-width: 375px) {
+      #home-content .col-md-12 a {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.43; } }
     #home-content .col-md-12 * {
       color: #fff;
       -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
@@ -10561,6 +10747,14 @@ img.border {
       -ms-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
       -o-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
       box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2); }
+      @media (max-width: 991px) {
+        #home-content .col-md-12 div.home-schedule h3 {
+          font-size: 20px;
+          font-size: 1.25rem;
+          line-height: 150%; } }
+      @media (max-width: 480px) {
+        #home-content .col-md-12 div.home-schedule h3 {
+          margin-top: 0; } }
       #home-content .col-md-12 div.home-schedule a:hover {
         text-decoration: underline; }
     #home-content .col-md-12 .centered a {
@@ -10598,160 +10792,14 @@ img.border {
         -o-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
         text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
 
-/***************************************************/
-/****************** RESPONSIVE STYLES **************/
-/***************************************************/
-@media only screen and (max-width: 1199px) {
-  #hero.home {
-    margin-top: 150px; } }
-
-@media only screen and (max-width: 1065px) {
-  #hero.home h1 {
-    font-size: 60px;
-    font-size: 3.75rem;
-    line-height: 1.43; }
-  #hero.home h2 {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 1.43; } }
-
-@media only screen and (max-width: 995px) {
-  .home-schedule h3 {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.43;
-    line-height: 150%; }
-  #home-content .col-md-12 {
-    margin-top: 10px; } }
-
-@media only screen and (max-width: 855px) {
-  #hero.home h1 {
-    font-size: 42px;
-    font-size: 2.625rem;
-    line-height: 1.43; }
-  #hero.home h2 {
-    font-size: 28px;
-    font-size: 1.75rem;
-    line-height: 1.43; } }
-
-@media only screen and (max-width: 767px) {
-  #hero.home {
-    height: auto;
-    padding: 20px 0; }
-  #home-content {
-    padding: 10px 0; } }
-
-@media only screen and (max-width: 610px) {
-  #hero.home h1 {
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 1.43; }
-  #hero.home h2 {
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 1.43; } }
-
-@media only screen and (max-width: 480px) {
-  #hero.home h1 {
-    font-size: 26px;
-    font-size: 1.625rem;
-    line-height: 1.43; }
-  #hero.home h2 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.43; }
-  .home-schedule h3 {
-    margin-top: 0; } }
-
-@media only screen and (max-width: 375px) {
-  #hero.home h1 {
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 1.43; }
-  #hero.home h2 {
-    font-size: 14px;
-    font-size: 0.875rem;
-    line-height: 1.43;
-    margin-top: 5px; }
-  #home-content h3 {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.43; }
-  #home-content .col-md-12 a {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.43; } }
-
 /*** INNER PAGE TEMPLATE STYLES ***/
-#hero.inner-page {
-  height: 250px; }
-  @media (max-width: 1199px) {
-    #hero.inner-page {
-      margin-top: 235px; } }
-  @media (max-width: 767px) {
-    #hero.inner-page {
-      height: auto;
-      margin-top: 150px; } }
-  @media (max-width: 767px) {
-    #hero.inner-page {
-      height: auto;
-      margin-top: 115px; } }
-  #hero.inner-page.dark h1, #hero.inner-page.dark h2 {
-    color: #000;
-    -webkit-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-    -moz-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-    -ms-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-    -o-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-    text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
-  #hero.inner-page h1 {
-    font-size: 60px;
-    font-size: 3.75rem;
-    line-height: 1.43; }
-    @media (max-width: 1199px) {
-      #hero.inner-page h1 {
-        font-size: 45px;
-        font-size: 2.8125rem;
-        line-height: 1.43; } }
-    @media (max-width: 991px) {
-      #hero.inner-page h1 {
-        font-size: 32px;
-        font-size: 2rem;
-        line-height: 1.43; } }
-    @media (max-width: 767px) {
-      #hero.inner-page h1 {
-        font-size: 26px;
-        font-size: 1.625rem;
-        line-height: 1.43; } }
-    @media (min-width: 359px) and (max-width: 375px) {
-      #hero.inner-page h1 {
-        font-size: 22px;
-        font-size: 1.375rem;
-        line-height: 1.43; } }
-    @media (max-width: 359px) {
-      #hero.inner-page h1 {
-        font-size: 18px;
-        font-size: 1.125rem;
-        line-height: 24px; } }
-  #hero.inner-page h2 {
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 1.43;
-    font-weight: 400; }
-    @media (max-width: 1199px) {
-      #hero.inner-page h2 {
-        font-size: 28px;
-        font-size: 1.75rem;
-        line-height: 1.43; } }
-    @media (max-width: 991px) {
-      #hero.inner-page h2 {
-        font-size: 22px;
-        font-size: 1.375rem;
-        line-height: 1.43; } }
-    @media (max-width: 767px) {
-      #hero.inner-page h2 {
-        font-size: 18px;
-        font-size: 1.125rem;
-        line-height: 1.43; } }
+#hero.inner-page.dark h1, #hero.inner-page.dark h2 {
+  color: #000;
+  -webkit-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  -moz-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  -ms-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  -o-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
 
 #hero.inner {
   background: url(../images/hero-inner.jpg) no-repeat 50% 50%;
@@ -11144,19 +11192,19 @@ img.border {
     -o-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
   #recent-posts-2 ul, #categories-2 ul, #archives-2 ul {
-    padding: 20px 20px 0 20px; }
+    padding: 10px 20px 0 20px; }
     #recent-posts-2 ul li, #categories-2 ul li, #archives-2 ul li {
       list-style-type: none;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
       #recent-posts-2 ul li:last-of-type, #categories-2 ul li:last-of-type, #archives-2 ul li:last-of-type {
         border: none; }
       #recent-posts-2 ul li a, #categories-2 ul li a, #archives-2 ul li a {
-        font-family: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Lato", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #68956a;
-        font-size: 18px;
-        font-size: 1.125rem;
+        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.43;
-        padding: 5px 0;
+        padding: 10px 0;
         display: block;
         -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
         -moz-transition: all, 0.15s, ease-in-out, 0.5s;
@@ -11170,6 +11218,96 @@ img.border {
           -o-transition: all, 0.15s, ease-in-out, 0.5s;
           transition: all, 0.15s, ease-in-out, 0.5s;
           color: #39443d; }
+
+#gform_widget-2 {
+  background: none #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3); }
+  #gform_widget-2 .gform_wrapper {
+    border: none;
+    margin: 0;
+    padding-top: 0; }
+    #gform_widget-2 .gform_wrapper ul.gform_fields li.gfield {
+      padding-right: 0;
+      margin-top: 0; }
+    #gform_widget-2 .gform_wrapper input, #gform_widget-2 .gform_wrapper textarea {
+      background: #dadada;
+      color: #000 !important;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      font-size: 12px !important;
+      font-size: 12px !important/16pxrem;
+      line-height: 1.43; }
+    #gform_widget-2 .gform_wrapper textarea {
+      margin-top: 10px; }
+    #gform_widget-2 .gform_wrapper .top_label div.ginput_container {
+      margin-top: 0; }
+    #gform_widget-2 .gform_wrapper .top_label li.gfield.gf_left_half {
+      padding-right: 5px; }
+    #gform_widget-2 .gform_wrapper .ginput_container select {
+      font-size: 12px;
+      font-size: 0.75rem;
+      line-height: 1.43;
+      margin-top: 5px; }
+    #gform_widget-2 .gform_wrapper input::-webkit-input-placeholder, #gform_widget-2 .gform_wrapper textarea::-webkit-input-placeholder {
+      color: #000; }
+  #gform_widget-2 h3 {
+    margin: 0;
+    padding: 10px 0; }
+  #gform_widget-2 .gform_footer {
+    padding: 0 15px !important;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    @incude justify-content(center); }
+    #gform_widget-2 .gform_footer input[type="submit"] {
+      font-size: 12px !important;
+      font-size: 12px !important/16pxrem;
+      line-height: 1.43;
+      display: inline-block;
+      text-align: center;
+      line-height: 100%;
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 1.43;
+      font-family: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: #39443d;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 10px 30px;
+      -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
+      -moz-transition: all, 0.15s, ease-in-out, 0.5s;
+      -ms-transition: all, 0.15s, ease-in-out, 0.5s;
+      -o-transition: all, 0.15s, ease-in-out, 0.5s;
+      transition: all, 0.15s, ease-in-out, 0.5s;
+      background: #68956a;
+      color: #fff !important;
+      line-height: 100%;
+      max-width: 100% !important;
+      margin: 0 auto; }
+      #gform_widget-2 .gform_footer input[type="submit"]:hover {
+        -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
+        -moz-transition: all, 0.15s, ease-in-out, 0.5s;
+        -ms-transition: all, 0.15s, ease-in-out, 0.5s;
+        -o-transition: all, 0.15s, ease-in-out, 0.5s;
+        transition: all, 0.15s, ease-in-out, 0.5s;
+        background: #dadada;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        color: #000;
+        -webkit-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        -moz-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        -ms-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        -o-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
+      #gform_widget-2 .gform_footer input[type="submit"]:hover {
+        color: #000 !important; }
 
 #nav_menu-3 ul {
   text-align: center;
@@ -11266,6 +11404,9 @@ img.border {
       color: #68956a; }
       .single-blog header h3 a:hover {
         color: #a39578; }
+
+.single-blog p {
+  margin-bottom: 20px; }
 
 .article {
   background: #fff;
