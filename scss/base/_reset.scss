@@ -52,6 +52,11 @@ img {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	&.border {
+		padding: 10px;
+		background: none #fff;
+		border: 1px solid $blk30;
+	}
 }
 
 
