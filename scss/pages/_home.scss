@@ -6,6 +6,16 @@
 		background: url(../images/hero-home.jpg) no-repeat 50% 100%;
 		@include background-size(cover);
 		height: 475px;
+		@include breakpoint(md) {
+			height: auto;
+			margin-top: 300px;
+		}
+		@include breakpoint(sm) {
+			margin-top: 165px;
+		}
+		@include breakpoint(0, 400px) {
+			margin-top: 153px;
+		}
 		h1 {
 			@include font-size(75px);
 			@include breakpoint(855px, 1065px) {

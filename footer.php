@@ -20,11 +20,16 @@
 		</section>
 	<!-- HOMEPAGE FEATURED SERVICES -->
 
-	
+
 	<?php else : ?>
-		<section id="latest-posts">
-			<?php get_template_part('partials/footer/template-part', 'latest-posts'); ?>
-		</section>
+		<?php
+		//--------------------------
+		// Latest Posts
+		//--------------------------
+
+			get_template_part('partials/footer/template-part', 'latest-posts');
+			
+		?>
 	<?php endif; ?>
 
 
@@ -57,7 +62,7 @@
 	</section>
 
 	<section id="bottom-footer">
-		<p>&copy; <?php echo date("Y"); ?> White Oak Family Dentistry</p> 
+		<p>&copy; <?php echo date("Y"); ?> White Oak Family Dentistry</p>
 	</section>
 </article>
 </div><!--.container-fluid-->

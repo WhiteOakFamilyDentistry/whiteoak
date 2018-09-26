@@ -46,7 +46,7 @@ add_action('wp_enqueue_scripts', 'load_my_theme_scripts');
 
 if(!function_exists('awesome_wp_title')) {
 
-  function awesome_wp_title( $title, $sep ) { 
+  function awesome_wp_title( $title, $sep ) {
     global $paged, $page;
 
     if ( is_feed() )
@@ -71,7 +71,7 @@ if(!function_exists('awesome_wp_title')) {
 }
 
 ////////////////////////////////////////////////////////////////////
-// REGISTER CUSTOM NAVIGATION WALKER 
+// REGISTER CUSTOM NAVIGATION WALKER
 ////////////////////////////////////////////////////////////////////
 
 require_once('lib/wp_bootstrap_navwalker.php');
@@ -134,7 +134,7 @@ function excerpt($num) {
     $limit = $num+1;
     $excerpt = explode(' ', get_the_excerpt(), $limit);
     array_pop($excerpt);
-    $excerpt = implode(" ",$excerpt).'...<a class="moretag" href="' .get_permalink($post->ID) . ' ">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>';
+    $excerpt = implode(" ",$excerpt).'...';
     echo $excerpt;
 }
 
@@ -202,7 +202,7 @@ function awesome_duplicate_post_as_draft(){
   if (! ( isset( $_GET['post']) || isset( $_POST['post'])  || ( isset($_REQUEST['action']) && 'rd_duplicate_post_as_draft' == $_REQUEST['action'] ) ) ) {
     wp_die('No post to duplicate has been supplied!');
   }
- 
+
   /*
    * get the original post id
    */
@@ -211,19 +211,19 @@ function awesome_duplicate_post_as_draft(){
    * and all the original post data then
    */
   $post = get_post( $post_id );
- 
+
   /*
    * if you don't want current user to be the new post author,
    * then change next couple of lines to this: $new_post_author = $post->post_author;
    */
   $current_user = wp_get_current_user();
   $new_post_author = $current_user->ID;
- 
+
   /*
    * if post data exists, create the post duplicate
    */
   if (isset( $post ) && $post != null) {
- 
+
     /*
      * new post data array
      */
@@ -242,12 +242,12 @@ function awesome_duplicate_post_as_draft(){
       'to_ping'        => $post->to_ping,
       'menu_order'     => $post->menu_order
     );
- 
+
     /*
      * insert the post by wp_insert_post() function
      */
     $new_post_id = wp_insert_post( $args );
- 
+
     /*
      * get all current post terms ad set them to the new post draft
      */
@@ -256,7 +256,7 @@ function awesome_duplicate_post_as_draft(){
       $post_terms = wp_get_object_terms($post_id, $taxonomy, array('fields' => 'slugs'));
       wp_set_object_terms($new_post_id, $post_terms, $taxonomy, false);
     }
- 
+
     /*
      * duplicate all post meta just in two SQL queries
      */
@@ -271,8 +271,8 @@ function awesome_duplicate_post_as_draft(){
       $sql_query.= implode(" UNION ALL ", $sql_query_sel);
       $wpdb->query($sql_query);
     }
- 
- 
+
+
     /*
      * finally, redirect to the edit post screen for the new draft
      */
@@ -283,7 +283,7 @@ function awesome_duplicate_post_as_draft(){
   }
 }
 add_action( 'admin_action_rd_duplicate_post_as_draft', 'awesome_duplicate_post_as_draft' );
- 
+
 /*
  * Add the duplicate link to action list for post_row_actions
  */
@@ -293,7 +293,7 @@ function awesome_duplicate_post_link( $actions, $post ) {
   }
   return $actions;
 }
- 
+
 add_filter( 'post_row_actions', 'awesome_duplicate_post_link', 10, 2 );
 add_filter( 'page_row_actions', 'awesome_duplicate_post_link', 10, 2); /* for pages */
 

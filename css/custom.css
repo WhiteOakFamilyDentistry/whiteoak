@@ -9897,15 +9897,25 @@ img.border {
     padding: 10px;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: auto;
+    height: auto; }
   #latest-posts h3 {
     text-align: center;
-    margin-bottom: 10px; }
+    height: 75px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30px; }
+    @media (max-width: 991px) {
+      #latest-posts h3 {
+        height: auto; } }
+    @media (max-width: 1199px) {
+      #latest-posts h3 {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 24px; } }
     #latest-posts h3 a {
       color: #68956a;
-      font-size: 24px;
-      font-size: 1.5rem;
-      line-height: 1.43;
       -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
       -moz-transition: all, 0.15s, ease-in-out, 0.5s;
       -ms-transition: all, 0.15s, ease-in-out, 0.5s;
@@ -9957,8 +9967,7 @@ img.border {
     -moz-transition: all, 0.15s, ease-in-out, 0.5s;
     -ms-transition: all, 0.15s, ease-in-out, 0.5s;
     -o-transition: all, 0.15s, ease-in-out, 0.5s;
-    transition: all, 0.15s, ease-in-out, 0.5s;
-    margin-top: 30px; }
+    transition: all, 0.15s, ease-in-out, 0.5s; }
     #latest-posts .centered a:hover {
       -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
       -moz-transition: all, 0.15s, ease-in-out, 0.5s;
@@ -9984,15 +9993,19 @@ img.border {
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  @inlcude justify-content(space-between);
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   -ms-align-items: flex-start;
   align-items: flex-start;
-  max-width: 1170px;
   width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 30px 15px; }
+  padding: 30px; }
   .latest-articles .latest {
     display: -webkit-box;
     display: -moz-box;
@@ -10008,15 +10021,13 @@ img.border {
     -ms-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: space-between;
-    -webkit-align-content: flex-start;
-    -moz-align-content: flex-start;
-    -ms-align-content: flex-start;
-    align-content: flex-start;
+    height: 570px;
     width: 33.33333%;
-    padding: 20px 15px; }
+    padding: 20px; }
     @media (max-width: 991px) {
       .latest-articles .latest {
-        width: 50%; } }
+        width: 50%;
+        height: auto; } }
     @media (max-width: 767px) {
       .latest-articles .latest {
         width: 100%;
@@ -10025,6 +10036,11 @@ img.border {
         -ms-justify-content: flex-start;
         justify-content: flex-start;
         -ms-flex-pack: flex-start; } }
+  .latest-articles .latest-info {
+    height: 500px; }
+    @media (max-width: 991px) {
+      .latest-articles .latest-info {
+        height: auto; } }
 
 #membership {
   background: url(../images/membership-bg.jpg) no-repeat 50% 50%;
@@ -10643,6 +10659,16 @@ img.border {
   -o-background-size: cover;
   background-size: cover;
   height: 475px; }
+  @media (max-width: 991px) {
+    #hero.home {
+      height: auto;
+      margin-top: 300px; } }
+  @media (max-width: 767px) {
+    #hero.home {
+      margin-top: 165px; } }
+  @media (max-width: 400px) {
+    #hero.home {
+      margin-top: 153px; } }
   #hero.home h1 {
     font-size: 75px;
     font-size: 4.6875rem;
