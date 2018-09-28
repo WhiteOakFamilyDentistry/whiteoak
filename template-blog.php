@@ -22,7 +22,7 @@
                 while ( $postslist->have_posts() ) : $postslist->the_post();
             ?>
             <?php
-            $category = get_the_category(); 
+            $category = get_the_category();
             if($category[0]){
             }
             ?>
@@ -30,7 +30,8 @@
               <?php the_post_thumbnail(('featured'), array( 'class' => 'aligncenter' )); ?>
                 <h2><a href="<?php echo get_the_permalink(); ?>"> <?php echo get_the_title(); ?></a></h2>
                 <p class="postmeta">Posted on <span class="date"><?php echo get_the_date(); ?></span> by <span class="author"> <?php echo get_the_author(); ?></a> in <span class="category"><?php the_category(', '); ?></span></p>
-                <?php excerpt('150'); ?>
+                <p><?php excerpt('150'); ?></p>
+                <a class="moretag" href="<?php echo get_permalink($post->ID); ?> ">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
             </div>
             <?php endwhile; ?>
             <?php awesome_theme_pagination(); ?>

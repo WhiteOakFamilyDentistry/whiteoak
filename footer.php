@@ -23,12 +23,13 @@
 
 	<?php else : ?>
 		<?php
+		
 		//--------------------------
 		// Latest Posts
 		//--------------------------
 
 			get_template_part('partials/footer/template-part', 'latest-posts');
-			
+
 		?>
 	<?php endif; ?>
 

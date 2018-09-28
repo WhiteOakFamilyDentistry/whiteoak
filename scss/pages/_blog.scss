@@ -45,7 +45,7 @@
 		.moretag {
 			display: block;
 			color: $green;
-			padding: 15px 0 0 0;
+			padding: 15px 0;
 			@include text-shadow($letterpress);
 			@include transition($smooth);
 			&:hover {
