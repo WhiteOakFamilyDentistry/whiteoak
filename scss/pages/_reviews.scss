@@ -137,7 +137,7 @@
 	padding: 10px;
 	margin: 10px;
 	position: relative;
-	height: 250px;
+	height: 300px;
 	border: 1px solid $blk20;
 	@include box-shadow(0 0 10px 5px $blk10);
 	.review-info {
@@ -166,6 +166,16 @@
 			@include text-shadow(none);
 			text-align: center;
 			font-family: $heading-font;
+		}
+	}
+	a {
+		text-align: center;
+		color: $green;
+		@include font-size(14px);
+		@include transition($smooth);
+		&:hover {
+			@include transition($smooth);
+			color: $dkgreen;
 		}
 	}
 }

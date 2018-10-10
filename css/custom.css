@@ -11813,7 +11813,7 @@ img.border {
   padding: 10px;
   margin: 10px;
   position: relative;
-  height: 250px;
+  height: 300px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
@@ -11870,3 +11870,21 @@ img.border {
       text-shadow: none;
       text-align: center;
       font-family: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .review a {
+    text-align: center;
+    color: #68956a;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
+    -moz-transition: all, 0.15s, ease-in-out, 0.5s;
+    -ms-transition: all, 0.15s, ease-in-out, 0.5s;
+    -o-transition: all, 0.15s, ease-in-out, 0.5s;
+    transition: all, 0.15s, ease-in-out, 0.5s; }
+    .review a:hover {
+      -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
+      -moz-transition: all, 0.15s, ease-in-out, 0.5s;
+      -ms-transition: all, 0.15s, ease-in-out, 0.5s;
+      -o-transition: all, 0.15s, ease-in-out, 0.5s;
+      transition: all, 0.15s, ease-in-out, 0.5s;
+      color: #39443d; }
