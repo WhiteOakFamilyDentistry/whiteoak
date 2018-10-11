@@ -1010,7 +1010,7 @@ td, th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5140,7 +5140,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   filter: alpha(opacity=50);
   opacity: .5; }
 
@@ -5215,7 +5215,7 @@ button.close {
   text-indent: -999px;
   cursor: pointer;
   background-color: #000\9;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
   border-radius: 10px; }
 
@@ -11888,3 +11888,12 @@ img.border {
       -o-transition: all, 0.15s, ease-in-out, 0.5s;
       transition: all, 0.15s, ease-in-out, 0.5s;
       color: #39443d; }
+
+/* Single Review Styles */
+#hero.review-header h1 {
+  font-size: 45px;
+  font-size: 2.8125rem;
+  line-height: 1.43; }
+
+.individual-review {
+  padding: 40px 15px; }

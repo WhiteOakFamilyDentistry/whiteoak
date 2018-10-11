@@ -179,3 +179,14 @@
 		}
 	}
 }
+/* Single Review Styles */
+#hero {
+	&.review-header {
+		h1 {
+			@include font-size(45px);
+		}
+	}
+}
+.individual-review {
+	padding: 40px 15px;
+}
