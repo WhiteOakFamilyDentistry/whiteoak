@@ -8,16 +8,7 @@ get_template_part('partials/template-part', 'head');
 /* Standard Loop */
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-/* Custom Query Args */
-$args = array(
-'post_type' => 'review',
-'posts_per_page' => -1,
-'meta_key' => 'review_date',
-'orderby' => 'meta_value_num',
-'order' => 'DESC'
 
-);
-$the_query = new WP_Query( $args );
 
 
 //-------------------------------
@@ -60,29 +51,44 @@ endwhile; endif; wp_reset_query();
 //-------------------------------
 
 
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+/* Custom Query Args */
+$args = array(
+'post_type' => 'review',
+'posts_per_page' => 3,
+'meta_key' => 'review_date',
+'orderby' => 'meta_value_num',
+'paged' => $paged,
+'order' => 'DESC'
+
+);
+$postslists = new WP_Query( $args );
+
+/* Begin Review Container */
+echo '<section id="main-content" class="review-archive">';
+
 /* Begin Custom Loop */
-if ($the_query->have_posts()) : while ( $the_query->have_posts() ) : $the_query->the_post();
+if ($postslists->have_posts()) : while ( $postslists->have_posts() ) : $postslists->the_post();
 
 // Review vars
 $headline = get_field( 'review_headline');
 $review = get_field( 'patient_review' );
 $date = get_field( 'review_date' );
 
-/* Main Content */
-echo '<section id="main-content" class="review-archive">';
+/* Individual Review */
 echo '<div class="container">';
 echo '<div class="review-info">';
-	echo '<h3>'.$headline.'...</h3>';
-	echo '<p>'.$review.'</p>';
-	echo '<p>';
-	the_title();
-	echo ' &bull; ';
-	echo $date;
-	echo '</p>';
-	echo '</div>';
-	echo '</div>';
+echo '<h3>'.$headline.'...</h3>';
+echo '<p>'.$review.'</p>';
+echo '<p>' .the_title(). '</p>';
+echo ' &bull; ';
+echo $date;
+echo '</p>';
+echo '</div>';
+echo '</div>';
 /* End Custom Loop */
-endwhile; endif; wp_reset_query();
+endwhile; awesome_theme_pagination(); wp_reset_postdata(); endif;
 
 
 echo '</section>';

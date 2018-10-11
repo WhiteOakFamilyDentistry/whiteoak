@@ -22,9 +22,11 @@ $date = get_field( 'review_date' );
     </header>
   </section>
   <section class="container individual-review">
-    <h2><?php the_title(); ?></h2>
-    <p><?php echo $review; ?></p>
-    <p><?php echo $date; ?></p>
+    <blockquote>
+      <p><?php echo $review; ?></p>
+      <cite><?php the_title(); ?> - <?php echo $date; ?></cite>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>our-reviews/">Read All Our Reviews <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </blockquote>
     <?php endwhile; endif; ?>
   </section><!--.container-->
 </article>

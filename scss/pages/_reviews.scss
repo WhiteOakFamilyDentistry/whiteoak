@@ -189,4 +189,33 @@
 }
 .individual-review {
 	padding: 40px 15px;
+	blockquote {
+		p {
+			@include font-size(18px, 28px);
+			max-width: 960px;
+			&::first-letter {
+				@include font-size(50px, 120%);
+				font-family: $heading-font;
+				display: block;
+				float: left;
+				padding: 0 10px 10px 0;
+				text-shadow: $letterpress;
+				color: $dkgreen;
+			}
+		}
+		cite {
+			font-family: $heading-font;
+			font-style: normal;
+			@include font-size(16px, 120%);
+			color: $brown;
+			display: block;
+			padding: 5px 0 5px 30px;
+		}
+		a {
+			display: inline-block;
+			margin: 15px 0 0 30px;
+			@include font-size(14px);
+			color: $green;
+		}
+	}
 }
