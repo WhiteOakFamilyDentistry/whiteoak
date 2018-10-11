@@ -21,7 +21,7 @@ $date = get_field( 'review_date' );
       <h1><?php echo $headline; ?>...</h1>
     </header>
   </section>
-  <section class="container single-review">
+  <section class="container individual-review">
     <h2><?php the_title(); ?></h2>
     <p><?php echo $review; ?></p>
     <p><?php echo $date; ?></p>
