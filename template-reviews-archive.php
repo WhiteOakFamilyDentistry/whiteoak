@@ -24,7 +24,7 @@ $h1 = get_field( 'h1_tag' );
 $h2 = get_field( 'h2_tag' );
 
 if( $hero_image ) {
-	echo '<section id="hero" style="background: url( ' .$hero[0]. ' ) transparent 50% 50% / cover;">';
+	echo '<section id="hero" class="review-archive" style="background: url( ' .$hero[0]. ' ) transparent 50% 50% / cover;">';
 } else {
 	echo '<section id="hero" class="inner">';
 }

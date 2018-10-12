@@ -185,6 +185,9 @@
 		h1 {
 			@include font-size(45px);
 		}
+		header {
+			text-align: left;
+		}
 	}
 }
 .individual-review {
@@ -193,6 +196,7 @@
 		p {
 			@include font-size(18px, 28px);
 			max-width: 960px;
+			min-height: 70px;
 			&::first-letter {
 				@include font-size(50px, 120%);
 				font-family: $heading-font;
@@ -216,6 +220,22 @@
 			margin: 15px 0 0 30px;
 			@include font-size(14px);
 			color: $green;
+		}
+	}
+}
+/* Review Archive */
+#hero {
+	&.review-archive {
+		header {
+			text-align: left;
+			width: 100%;
+			padding-left: 15px;
+			@include align-items(flex-start);
+			@include justify-content(flex-start);
+			h1, h2 {
+				color: $dkgreen;
+				text-shadow: $letterpress;
+			}
 		}
 	}
 }
