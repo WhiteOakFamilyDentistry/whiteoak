@@ -388,7 +388,4 @@ function modify_logged_in_table_row( $val, $column_name, $user_id ) {
 add_filter( 'manage_users_custom_column', 'modify_logged_in_table_row', 10, 3 );
 
 
-
-
-
 ?>

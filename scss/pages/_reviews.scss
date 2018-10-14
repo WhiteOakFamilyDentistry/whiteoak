@@ -193,6 +193,7 @@
 .individual-review {
 	padding: 40px 15px;
 	blockquote {
+		padding-left: 40px;
 		p {
 			@include font-size(18px, 28px);
 			max-width: 960px;
@@ -213,11 +214,11 @@
 			@include font-size(16px, 120%);
 			color: $brown;
 			display: block;
-			padding: 5px 0 5px 30px;
+			padding: 5px 0;
 		}
 		a {
 			display: inline-block;
-			margin: 15px 0 0 30px;
+			margin: 15px 0 0 0;
 			@include font-size(14px);
 			color: $green;
 		}
@@ -238,4 +239,7 @@
 			}
 		}
 	}
+}
+#review-archive {
+	padding: 40px 0;
 }

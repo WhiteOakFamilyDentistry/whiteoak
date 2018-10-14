@@ -1,14 +1,14 @@
 <?php
+
 /**
  * Template Name: Review Archive
 **/
+
 get_header();
 get_template_part('partials/template-part', 'head');
 
 /* Standard Loop */
 if ( have_posts() ) : while ( have_posts() ) : the_post();
-
-
 
 
 //-------------------------------
@@ -19,7 +19,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 // Hero image & heading vars
 $hero_image = get_field( 'hero_image' );
 $size = 'full';
-$hero = wp_get_attachment_image_src( $hero_image, $size);
+$hero = wp_get_attachment_image_src( $hero_image, $size );
 $h1 = get_field( 'h1_tag' );
 $h2 = get_field( 'h2_tag' );
 
@@ -59,8 +59,8 @@ $args = array(
 'posts_per_page' => 3,
 'meta_key' => 'review_date',
 'orderby' => 'meta_value_num',
-'paged' => $paged,
-'order' => 'DESC'
+'order' => 'DESC',
+'paged' => $paged
 
 );
 $postslists = new WP_Query( $args );
@@ -69,7 +69,7 @@ $postslists = new WP_Query( $args );
 echo '<section id="main-content" class="review-archive">';
 
 /* Begin Custom Loop */
-if ($postslists->have_posts()) : while ( $postslists->have_posts() ) : $postslists->the_post();
+if ( $postslists->have_posts()) : while ( $postslists->have_posts() ) : $postslists->the_post();
 
 // Review vars
 $headline = get_field( 'review_headline');
@@ -77,22 +77,21 @@ $review = get_field( 'patient_review' );
 $date = get_field( 'review_date' );
 
 /* Individual Review */
-echo '<div class="container">';
-echo '<div class="review-info">';
-echo '<h3>'.$headline.'...</h3>';
+echo '<section class="container individual-review">';
+echo '<blockquote>';
 echo '<p>'.$review.'</p>';
-echo '<p>' .the_title(). '</p>';
-echo ' &bull; ';
+echo '<cite>';
+the_title();
+echo  ' - ';
 echo $date;
-echo '</p>';
-echo '</div>';
-echo '</div>';
+echo '</cite>';
+echo '</blockquote>';
+echo '</section>';
+
 /* End Custom Loop */
 endwhile; awesome_theme_pagination(); wp_reset_postdata(); endif;
 
-
-echo '</section>';
-
+echo '</section>'; // End .review-archive
 
 get_footer();
 
