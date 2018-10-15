@@ -149,7 +149,7 @@ function awesome_edit_footer()
 }
 
 function wpse_edit_text($content) {
-  return 'Website developed by <strong><em><a href="https://www.dogdays-design.com/" target="_blank">Dog Days Design</a></em></strong>';
+  return 'Website developed by <strong><em><a href="https://www.mattsigmonproductions.com/" target="_blank">Matt Sigmon Productions</a></em></strong>';
 }
 add_action( 'admin_init', 'awesome_edit_footer' );
 
@@ -158,27 +158,40 @@ add_action( 'admin_init', 'awesome_edit_footer' );
 ////////////////////////////////////////////////////////////////////
 
 function awesome_theme_pagination() {
-  global $postslist;
 
-  $total_pages = $postslist->max_num_pages;
+  if( is_page( 'articles' ) ) {
 
-  if ($total_pages > 1){
-
-    $current_page = max(1, get_query_var('paged'));
-
+    global $postslist;
+    $big = 999999999;
     echo '<div class="page_nav">';
+    echo paginate_links(
+      array(
+        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+        'format' => '%#%',
+        'current' => max(1, get_query_var('paged')),
+        'total' => $postslist->max_num_pages
+      )
+	   );
+     echo '</div>';
 
-    echo paginate_links(array(
-      'base' => get_pagenum_link(1) . '%_%',
-      'format' => '/page/%#%',
-      'current' => $current_page,
-      'total' => $total_pages,
-      'prev_text' => 'Prev',
-      'next_text' => 'Next'
-      ));
+   }
 
-    echo '</div>';
-  }
+   else {
+
+     global $wp_query;
+     echo '<div class="page_nav">';
+     $big = 999999999;
+     echo paginate_links(
+       array(
+         'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+         'format' => '%#%',
+         'current' => max(1, get_query_var('paged')),
+         'total' => $wp_query->max_num_pages
+       )
+   	);
+     echo '</div>';
+
+    }
 }
 
 ////////////////////////////////////////////////////////////////////

@@ -7,7 +7,7 @@
 /* Custom Args */
 $args = array(
 'post_type' => 'review',
-'posts_per_page' => -1,
+'posts_per_page' => 15,
 'meta_key' => 'review_date',
 'orderby' => 'meta_value_num',
 'order' => 'DESC'
@@ -37,7 +37,7 @@ $the_query = new WP_Query( $args );
 
 			// Get Review charcter length
 			$length = strlen( $review );
-			// Create short review for display is caurosel
+			// Create short review for display in caurosel
 			$short = substr( $review, 0, 135 );
 
 			//----------------------------
@@ -56,7 +56,6 @@ $the_query = new WP_Query( $args );
 			} else {
 				echo $review;
 			}
-			/* Conditionally show full or abbreviated Review */
 
 			echo '</p>';
 			echo '<a href=" '. get_permalink() . '" target="_blank">Read Full Review <i class="fa fa-angle-right" aria-hidden="true"></i></a>';
@@ -72,6 +71,7 @@ $the_query = new WP_Query( $args );
 
 		?>
 	</div><!-- #testimonials -->
+	<a class="read-all" href="<?php echo esc_url( home_url( '/' ) ); ?>our-reviews/" target="_blank"><i class="fa fa-comments-o" aria-hidden="true"></i> Read All Our Reviews</a>
 	<aside id="more-reviews">
 		<header>
 			<h3>Not Convinced?  Read Testimonials from these Popular Review Platforms.</h3>

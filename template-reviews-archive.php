@@ -50,26 +50,26 @@ endwhile; endif; wp_reset_query();
 // Review Archive Display
 //-------------------------------
 
-
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+/* Set up pagination query var */
+$paged = ( get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 
 /* Custom Query Args */
 $args = array(
 'post_type' => 'review',
-'posts_per_page' => 3,
+'posts_per_page' => 10,
 'meta_key' => 'review_date',
 'orderby' => 'meta_value_num',
 'order' => 'DESC',
 'paged' => $paged
 
 );
-$postslists = new WP_Query( $args );
+$wp_query = new WP_Query( $args );
 
 /* Begin Review Container */
 echo '<section id="main-content" class="review-archive">';
 
 /* Begin Custom Loop */
-if ( $postslists->have_posts()) : while ( $postslists->have_posts() ) : $postslists->the_post();
+if ( $wp_query->have_posts()) : while ( $wp_query->have_posts() ) : $wp_query->the_post();
 
 // Review vars
 $headline = get_field( 'review_headline');

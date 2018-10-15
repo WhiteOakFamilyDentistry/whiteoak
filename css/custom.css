@@ -11599,7 +11599,6 @@ img.border {
     #opal .col-md-7 img {
       margin-top: 30px; }
 
-/* REVIEW SECTION STYLES */
 #reviews {
   background: url(../images/reviews-bg.jpg) transparent no-repeat 50% 50%/cover;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -11889,7 +11888,48 @@ img.border {
       transition: all, 0.15s, ease-in-out, 0.5s;
       color: #39443d; }
 
-/* Single Review Styles */
+.read-all {
+  display: inline-block;
+  text-align: center;
+  line-height: 100%;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.43;
+  font-family: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #39443d;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 30px;
+  -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
+  -moz-transition: all, 0.15s, ease-in-out, 0.5s;
+  -ms-transition: all, 0.15s, ease-in-out, 0.5s;
+  -o-transition: all, 0.15s, ease-in-out, 0.5s;
+  transition: all, 0.15s, ease-in-out, 0.5s;
+  margin: 20px auto 0 auto;
+  display: block;
+  max-width: 275px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.43;
+  font-family: "Lato", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: capitalize; }
+  .read-all:hover {
+    -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
+    -moz-transition: all, 0.15s, ease-in-out, 0.5s;
+    -ms-transition: all, 0.15s, ease-in-out, 0.5s;
+    -o-transition: all, 0.15s, ease-in-out, 0.5s;
+    transition: all, 0.15s, ease-in-out, 0.5s;
+    background: #dadada;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: #000;
+    -webkit-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    -moz-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    -ms-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    -o-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
+
 #hero.review-header h1 {
   font-size: 45px;
   font-size: 2.8125rem;
@@ -11897,6 +11937,9 @@ img.border {
 
 #hero.review-header header {
   text-align: left; }
+
+.review-archive {
+  padding: 30px 0; }
 
 .individual-review {
   padding: 40px 15px; }
