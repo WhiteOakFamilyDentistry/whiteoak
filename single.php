@@ -15,6 +15,7 @@
                 <h3 class="postmeta">Posted on <span class="date"><?php the_date(); ?></span> by <span class="author"><?php the_author(); ?> </a> in <span class="category"><?php the_category(', '); ?></span></h3>
             </header>
             <?php
+              /* Get page slug to provide unique class for each post*/
               $slug = get_post_field( 'post_name', get_post() );
             ?>
             <div class="article <?php echo $slug; ?>">
