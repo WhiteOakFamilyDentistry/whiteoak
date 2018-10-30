@@ -14,7 +14,10 @@
                 <h2><?php the_field('sub_heading') ;?></h2>
                 <h3 class="postmeta">Posted on <span class="date"><?php the_date(); ?></span> by <span class="author"><?php the_author(); ?> </a> in <span class="category"><?php the_category(', '); ?></span></h3>
             </header>
-            <div class="article">
+            <?php
+              $slug = get_post_field( 'post_name', get_post() );
+            ?>
+            <div class="article <?php echo $slug; ?>">
                 <div>
                     <?php the_content(); ?>
                 </div>

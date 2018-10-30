@@ -293,6 +293,48 @@
 			}
 		}
 	}
+
+
+	//=======================================
+	// CUSTOM STYLES FOR INDIVIDUAL POSTS
+	//=======================================
+
+	/**
+	 * The styles below pertain to specific
+	 * blog posts. A class is automatically
+	 * added to an article to prevent
+	 * style conflicts
+	 */
+
+	 //--------------------------------------
+	 // 7 Myths About Dental Care (10/31/18)
+	 //--------------------------------------
+
+	 &.seven-myths-about-dental-care {
+		 ol {
+			 padding: 20px 0 20px 35px;
+			 margin: 0;
+			 li {
+				 @include font-size(42px);
+				 margin: 10px 0;
+				 color: $brown;
+				 font-family: $heading-font;
+				 @include breakpoint(sm) {
+					 @include font-size(22px);
+				 }
+				 p {
+					 @include font-size(18px, 160%);
+					 color: $blk50;
+					 @include breakpoint(sm) {
+						 @include font-size(16px, 130%);
+					 }
+				 }
+			 }
+		 }
+	 }
+
+
+
 }
 .author-bio {
 	margin: 30px auto 50px auto;

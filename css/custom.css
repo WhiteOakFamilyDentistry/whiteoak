@@ -11447,7 +11447,13 @@ img.border {
   -moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  /**
+	 * The styles below pertain to specific
+	 * blog posts. A class is automatically
+	 * added to an article to prevent
+	 * style conflicts
+	 */ }
   .article div {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 40px; }
@@ -11456,6 +11462,31 @@ img.border {
     color: #68956a; }
     .article p a:hover {
       color: #39443d; }
+  .article.seven-myths-about-dental-care ol {
+    padding: 20px 0 20px 35px;
+    margin: 0; }
+    .article.seven-myths-about-dental-care ol li {
+      font-size: 42px;
+      font-size: 2.625rem;
+      line-height: 1.43;
+      margin: 10px 0;
+      color: #a39578;
+      font-family: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      @media (max-width: 767px) {
+        .article.seven-myths-about-dental-care ol li {
+          font-size: 22px;
+          font-size: 1.375rem;
+          line-height: 1.43; } }
+      .article.seven-myths-about-dental-care ol li p {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5); }
+        @media (max-width: 767px) {
+          .article.seven-myths-about-dental-care ol li p {
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 130%; } }
 
 .author-bio {
   margin: 30px auto 50px auto;
