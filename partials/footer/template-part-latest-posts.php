@@ -12,7 +12,7 @@
 			<div class="latest-info">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail(('featured'), array( 'class' => 'aligncenter' )); ?></a>
 				<h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				<?php excerpt('50'); ?>
+				<p><?php excerpt('50'); ?></p>
 			</div>
 			<a class="moretag" href="<?php echo get_permalink($post->ID); ?> ">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 		</div><!-- .latest -->
