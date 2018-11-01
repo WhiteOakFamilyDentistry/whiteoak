@@ -333,7 +333,41 @@
 		 }
 	 }
 
+	 //--------------------------------------
+	 // Invisalign vs. Braces 11/15/18)
+	 //--------------------------------------
 
+	 &.invisalign-vs-braces {
+		 h2 {
+			 text-align: center;
+			 color: $brown;
+			 border-top: 1px solid $blk10;
+			 border-bottom: 1px solid $blk10;
+			 padding: 15px;
+			 margin: 40px auto;
+			 @include font-size(50px, 100%);
+		 }
+		 p {
+			 strong {
+				 display: block;
+				 @include font-size(20px);
+				 margin-bottom: 10px;
+				 padding-bottom: 10px;
+				 border-bottom: 1px solid $blk30;
+			 }
+			 &:nth-of-type(odd) {
+				 margin-top: 10px;
+			 }
+		 }
+		 h3 {
+			 margin-top: 50px;
+		 }
+		 img {
+			 &.border {
+				 border: 1px solid $blk10;
+			 }
+		 }
+	 }
 
 }
 .author-bio {
