@@ -369,6 +369,29 @@
 		 }
 	 }
 
+	 //------------------------------------
+	 // Root Canals Pros & Cons
+	 //------------------------------------
+
+	 &.root-canals-pros-cons {
+		 h2 {
+			 text-align: center;
+			 color: $brown;
+			 padding: 20px 0;
+			 margin: 20px auto 0 auto;
+			 border-top: 1px solid $blk10;
+			 border-bottom: 1px solid $blk10;
+		 }
+		 ul {
+			 margin: 0;
+			 padding: 15px 0;
+			 li {
+				 color: $dkgreen;
+				 margin: 5px 0;
+			 }
+		 }
+	 }
+
 }
 .author-bio {
 	margin: 30px auto 50px auto;

@@ -11511,6 +11511,19 @@ img.border {
     margin-top: 50px; }
   .article.invisalign-vs-braces img.border {
     border: 1px solid rgba(0, 0, 0, 0.1); }
+  .article.root-canals-pros-cons h2 {
+    text-align: center;
+    color: #a39578;
+    padding: 20px 0;
+    margin: 20px auto 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .article.root-canals-pros-cons ul {
+    margin: 0;
+    padding: 15px 0; }
+    .article.root-canals-pros-cons ul li {
+      color: #39443d;
+      margin: 5px 0; }
 
 .author-bio {
   margin: 30px auto 50px auto;

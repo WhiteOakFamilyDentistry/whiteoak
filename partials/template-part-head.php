@@ -9,7 +9,19 @@
     <div id="top">
         <!-- Tablet Contact -->
         <div id="tablet-contact" class="visible-md visible-sm hidden-xs">
-            <p><?php echo get_theme_mod('location_street'); ?> &bull; <?php echo get_theme_mod('hours'); ?> &bull; <a href="tel:<?php echo get_theme_mod('location_phone'); ?>"><?php echo get_theme_mod('location_phone'); ?></strong></a> <a href="<?php echo get_theme_mod('facebook_link'); ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="<?php echo get_theme_mod('yelp_link'); ?>" target="_blank"><i class="fa fa-yelp" aria-hidden="true"></i></a> <a href="<?php echo get_theme_mod('google_plus_link'); ?>" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></p>
+
+          <?php
+            $street = get_theme_mod( 'location_street' );
+            $hours = get_theme_mod( 'hours' );
+            $phone = get_theme_mod( 'location_phone' );
+            $fb = get_theme_mod( 'facebook_link' );
+            $yp = get_theme_mod( 'yelp_link' );
+            $goog = get_theme_mod( 'google_plus_link' );
+
+          ?>
+
+
+            <p><?php esc_html_e( $street ); ?> &bull; <?php esc_html_e( $hours ); ?> &bull; <a href="tel:<?php esc_attr_e( $phone ); ?>"><?php esc_html_e( $phone ); ?>"></strong></a> <a href="<?php esc_attr_e( $fb ); ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="<?php echo get_theme_mod('yelp_link'); ?>" target="_blank"><i class="fa fa-yelp" aria-hidden="true"></i></a> <a href="<?php echo get_theme_mod('google_plus_link'); ?>" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></p>
         </div>
         <!-- End Tablet Contact -->
         <!-- Top Navigation -->
@@ -37,7 +49,7 @@
             <div id="header-widget">
                 <?php get_template_part('partials/template-part', 'headernav'); ?>
                 <div class="hidden-md hidden-sm hidden-xs">
-                    <p><?php echo get_theme_mod('location_street'); ?> &bull; <?php echo get_theme_mod('hours'); ?> &bull; <strong>Call Today! <a href="tel:<?php echo get_theme_mod('location_phone'); ?>"><?php echo get_theme_mod('location_phone'); ?></strong></a> <a href="<?php echo get_theme_mod('facebook_link'); ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="<?php echo get_theme_mod('yelp_link'); ?>" target="_blank"><i class="fa fa-yelp" aria-hidden="true"></i></a> <a href="<?php echo get_theme_mod('google_plus_link'); ?>" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></p>
+                    <p><?php esc_html_e( $street ); ?> &bull; <?php esc_html_e( $hours ); ?> &bull; <strong>Call Today! <a href="tel:<?php esc_attr_e( $phone ); ?>"><?php esc_html_e( $phone ); ?></a></strong> <a href="<?php esc_attr_e( $fb ); ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="<?php esc_attr_e( $yp ); ?>" target="_blank"><i class="fa fa-yelp" aria-hidden="true"></i></a> <a href="<?php esc_attr_e( $goog ); ?>" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></p>
                 </div>
             </div><!-- #header-widget -->
         </div><!--.col-md-10-->
