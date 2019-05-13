@@ -36,9 +36,9 @@
 				<div>
 					<h3>Price Per Year:</h3>
 					<p>Adult Membership</p>
+					<p>$199</p>
+					<p>Child <em>(12 &amp; under)</em> Senior <em>(65 &amp; over)</em></p>
 					<p>$175</p>
-					<p>Child Membership <em>(14 &amp; under)</em></p>
-					<p>$150</p>
 				</div>
 			</div>
 		</div>
