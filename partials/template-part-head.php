@@ -32,7 +32,7 @@
         </div>
         <div class="container">
             <div class="col-md-6">
-                <p><i class="fa fa-user-plus" aria-hidden="true"></i> New Patient Special $89 <a href="#new-patient">Learn More!</a></p>
+                <p><i class="fa fa-user-plus" aria-hidden="true"></i> New Patient Special $99 <a href="#new-patient">Learn More!</a></p>
             </div><!--.col-md-6-->
             <div class="col-md-6">
                 <p><i class="fa fa-users" aria-hidden="true"></i> Yearly Membership Plan $175 <a href="#membership">Learn More!</a></p>
