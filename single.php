@@ -2,7 +2,12 @@
 <?php get_template_part('partials/template-part', 'head'); ?>
 <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?>
 <article id="category-page">
-    <section id="hero" class="inner-page <?php the_field('header_class'); ?>" style="background: url('<?php echo $thumb['0']; ?>') 50% 50%; background-size: cover;">
+    <section id="hero" class="inner-page <?php the_field('header_class'); ?>" <?php
+                                                                                if ($thumb) {
+                                                                                    echo 'style="background: url(' . $thumb['0'] . ') 50% 50%; background-size: cover;"';
+                                                                                } else {
+                                                                                    echo 'style="background: url(' . get_template_directory_uri() . '/images/hero-home.jpg) 50% 50%; background-size: cover;"';
+                                                                                } ?>>
         <header>
             <h1><?php the_title(); ?></h1>
         </header>
