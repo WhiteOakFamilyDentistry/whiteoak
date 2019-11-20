@@ -85,7 +85,9 @@
 		margin-bottom: 30px;
 	}
 }
-#recent-posts-2, #categories-2, #archives-2 {
+#recent-posts-2,
+#categories-2,
+#archives-2 {
 	background: #fff;
 	border: 1px solid $green;
 	h3 {
@@ -137,7 +139,8 @@
 				}
 			}
 		}
-		input, textarea {
+		input,
+		textarea {
 			background: $gray;
 			color: #000 !important;
 			border: 1px solid $blk30;
@@ -166,7 +169,8 @@
 				margin-top: 5px;
 			}
 		}
-		input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
 			color: #000;
 		}
 	}
@@ -178,18 +182,18 @@
 		padding: 0 15px !important;
 		@include flexbox;
 		@include align-items(center);
-		@incude justify-content(center);
-		input[type="submit"] {
+		@include justify-content(center);
+		input[type='submit'] {
 			@include font-size(12px !important);
 			@include green-button;
 			background: $green;
 			color: #fff !important;
 			line-height: 100%;
-      max-width: 100% !important;
-      margin: 0 auto;
-      &:hover {
-      	color: #000 !important;
-      }
+			max-width: 100% !important;
+			margin: 0 auto;
+			&:hover {
+				color: #000 !important;
+			}
 		}
 	}
 }
@@ -211,7 +215,7 @@
 			&:nth-of-type(odd) {
 				border-right: 1px solid rgba(0, 0, 0, 0.1);
 			}
-			&:nth-last-child(-n+2) {
+			&:nth-last-child(-n + 2) {
 				border-bottom: none;
 			}
 			a {
@@ -248,7 +252,10 @@
 		padding: 20px 5px;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		@include box-shadow(0 -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 0 rgba(255, 255, 255, 0.5));
+		@include box-shadow(
+			0 -1px 0 0 rgba(255, 255, 255, 0.5),
+			0 1px 0 0 rgba(255, 255, 255, 0.5)
+		);
 		h2 {
 			color: $green;
 			@include text-shadow($letterpress);
@@ -274,7 +281,7 @@
 		margin-bottom: 20px;
 	}
 }
-.article {
+.blog-article {
 	background: #fff;
 	padding: 10px;
 	margin: 20px auto;
@@ -294,6 +301,9 @@
 		}
 	}
 
+	//------------------
+	// Global Styles
+	//------------------
 
 	//=======================================
 	// CUSTOM STYLES FOR INDIVIDUAL POSTS
@@ -306,173 +316,173 @@
 	 * style conflicts
 	 */
 
-	 //--------------------------------------
-	 // 7 Myths About Dental Care (10/31/18)
-	 //--------------------------------------
+	//--------------------------------------
+	// 7 Myths About Dental Care (10/31/18)
+	//--------------------------------------
 
-	 &.seven-myths-about-dental-care {
-		 ol {
-			 padding: 20px 0 20px 35px;
-			 margin: 0;
-			 li {
-				 @include font-size(42px);
-				 margin: 10px 0;
-				 color: $brown;
-				 font-family: $heading-font;
-				 @include breakpoint(sm) {
-					 @include font-size(22px);
-				 }
-				 p {
-					 @include font-size(18px, 160%);
-					 color: $blk50;
-					 @include breakpoint(sm) {
-						 @include font-size(16px, 130%);
-					 }
-				 }
-			 }
-		 }
-	 }
+	&.seven-myths-about-dental-care {
+		ol {
+			padding: 20px 0 20px 35px;
+			margin: 0;
+			li {
+				@include font-size(42px);
+				margin: 10px 0;
+				color: $brown;
+				font-family: $heading-font;
+				@include breakpoint(sm) {
+					@include font-size(22px);
+				}
+				p {
+					@include font-size(18px, 160%);
+					color: $blk50;
+					@include breakpoint(sm) {
+						@include font-size(16px, 130%);
+					}
+				}
+			}
+		}
+	}
 
-	 //--------------------------------------
-	 // Invisalign vs. Braces 11/15/18)
-	 //--------------------------------------
+	//--------------------------------------
+	// Invisalign vs. Braces 11/15/18)
+	//--------------------------------------
 
-	 &.invisalign-vs-braces {
-		 h2 {
-			 text-align: center;
-			 color: $brown;
-			 border-top: 1px solid $blk10;
-			 border-bottom: 1px solid $blk10;
-			 padding: 15px;
-			 margin: 40px auto;
-			 @include font-size(50px, 100%);
-		 }
-		 p {
-			 strong {
-				 display: block;
-				 @include font-size(20px);
-				 margin-bottom: 10px;
-				 padding-bottom: 10px;
-				 border-bottom: 1px solid $blk30;
-			 }
-			 &:nth-of-type(odd) {
-				 margin-top: 10px;
-			 }
-		 }
-		 h3 {
-			 margin-top: 50px;
-		 }
-		 img {
-			 &.border {
-				 border: 1px solid $blk10;
-			 }
-		 }
-	 }
+	&.invisalign-vs-braces {
+		h2 {
+			text-align: center;
+			color: $brown;
+			border-top: 1px solid $blk10;
+			border-bottom: 1px solid $blk10;
+			padding: 15px;
+			margin: 40px auto;
+			@include font-size(50px, 100%);
+		}
+		p {
+			strong {
+				display: block;
+				@include font-size(20px);
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid $blk30;
+			}
+			&:nth-of-type(odd) {
+				margin-top: 10px;
+			}
+		}
+		h3 {
+			margin-top: 50px;
+		}
+		img {
+			&.border {
+				border: 1px solid $blk10;
+			}
+		}
+	}
 
-	 //------------------------------------
-	 // Root Canals Pros & Cons
-	 //------------------------------------
+	//------------------------------------
+	// Root Canals Pros & Cons
+	//------------------------------------
 
-	 &.root-canals-pros-cons {
-		 h2 {
-			 text-align: center;
-			 color: $brown;
-			 padding: 20px 0;
-			 margin: 20px auto 0 auto;
-			 border-top: 1px solid $blk10;
-			 border-bottom: 1px solid $blk10;
-		 }
-		 ul {
-			 margin: 0;
-			 padding: 15px 0;
-			 li {
-				 color: $dkgreen;
-				 margin: 5px 0;
-			 }
-		 }
-	 }
-
+	&.root-canals-pros-cons {
+		h2 {
+			text-align: center;
+			color: $brown;
+			padding: 20px 0;
+			margin: 20px auto 0 auto;
+			border-top: 1px solid $blk10;
+			border-bottom: 1px solid $blk10;
+		}
+		ul {
+			margin: 0;
+			padding: 15px 0;
+			li {
+				color: $dkgreen;
+				margin: 5px 0;
+			}
+		}
+	}
 }
 .author-bio {
 	margin: 30px auto 50px auto;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	@include box-shadow(0 -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 0 rgba(255, 255, 255, 0.5));
+	@include box-shadow(
+		0 -1px 0 0 rgba(255, 255, 255, 0.5),
+		0 1px 0 0 rgba(255, 255, 255, 0.5)
+	);
 	padding: 20px 5px;
 }
-
-
 
 /***************************************************/
 /****************** RESPONSIVE STYLES **************/
 /***************************************************/
-@media only screen and (max-width: 767px)  {
-  .single-blog {
-    header {
-      h2 {
-        @include font-size(28px);
-      }
-      h3 {
-        @include font-size(14px);
-        margin-top: 0;
-      }
-    }
-  }
-  .author-bio {
-    text-align: center;
-  }
+@media only screen and (max-width: 767px) {
+	.single-blog {
+		header {
+			h2 {
+				@include font-size(28px);
+			}
+			h3 {
+				@include font-size(14px);
+				margin-top: 0;
+			}
+		}
+	}
+	.author-bio {
+		text-align: center;
+	}
 }
-@media only screen and (max-width: 600px)  {
-  .blog-post {
-    .postmeta {
-      @include font-size(12px);
-    }
-    .moretag {
-      text-align: center;
-    }
-    img {
-      display: none;
-    }
-  }
-  .single-blog {
-    header {
-      h2 {
-        @include font-size(22px);
-      }
-      h3 {
-        @include font-size(12px);
-      }
-    }
-  }
-  .postmeta {
-    line-height: 130%;
-  }
-  .article {
-    div {
-      padding: 15px;
-    }
-    h3 {
-      @include font-size(18px);
-    }
-  }
-  .author-bio {
-    margin: 20px auto;
-    h3 {
-      @include font-size(22px);
-    }
-  }
+@media only screen and (max-width: 600px) {
+	.blog-post {
+		.postmeta {
+			@include font-size(12px);
+		}
+		.moretag {
+			text-align: center;
+		}
+		img {
+			display: none;
+		}
+	}
+	.single-blog {
+		header {
+			h2 {
+				@include font-size(22px);
+			}
+			h3 {
+				@include font-size(12px);
+			}
+		}
+	}
+	.postmeta {
+		line-height: 130%;
+	}
+	.article {
+		div {
+			padding: 15px;
+		}
+		h3 {
+			@include font-size(18px);
+		}
+	}
+	.author-bio {
+		margin: 20px auto;
+		h3 {
+			@include font-size(22px);
+		}
+	}
 }
-@media only screen and (max-width: 375px)  {
-  .single-blog {
-    header {
-      padding: 10px;
-      h2 {
-        @include font-size(20px);
-        line-height: 130%;
-      }
-      h3 {
-        @include font-size(12px);
-      }
-    }
-  }
+@media only screen and (max-width: 375px) {
+	.single-blog {
+		header {
+			padding: 10px;
+			h2 {
+				@include font-size(20px);
+				line-height: 130%;
+			}
+			h3 {
+				@include font-size(12px);
+			}
+		}
+	}
 }

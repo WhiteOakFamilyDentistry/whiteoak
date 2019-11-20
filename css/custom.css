@@ -11207,10 +11207,14 @@ img.border {
 #blog-sidebar .widget {
   margin-bottom: 30px; }
 
-#recent-posts-2, #categories-2, #archives-2 {
+#recent-posts-2,
+#categories-2,
+#archives-2 {
   background: #fff;
   border: 1px solid #68956a; }
-  #recent-posts-2 h3, #categories-2 h3, #archives-2 h3 {
+  #recent-posts-2 h3,
+  #categories-2 h3,
+  #archives-2 h3 {
     background: #68956a;
     padding: 10px 0;
     margin: 0;
@@ -11221,14 +11225,22 @@ img.border {
     -ms-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
     -o-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
-  #recent-posts-2 ul, #categories-2 ul, #archives-2 ul {
+  #recent-posts-2 ul,
+  #categories-2 ul,
+  #archives-2 ul {
     padding: 10px 20px 0 20px; }
-    #recent-posts-2 ul li, #categories-2 ul li, #archives-2 ul li {
+    #recent-posts-2 ul li,
+    #categories-2 ul li,
+    #archives-2 ul li {
       list-style-type: none;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-      #recent-posts-2 ul li:last-of-type, #categories-2 ul li:last-of-type, #archives-2 ul li:last-of-type {
+      #recent-posts-2 ul li:last-of-type,
+      #categories-2 ul li:last-of-type,
+      #archives-2 ul li:last-of-type {
         border: none; }
-      #recent-posts-2 ul li a, #categories-2 ul li a, #archives-2 ul li a {
+      #recent-posts-2 ul li a,
+      #categories-2 ul li a,
+      #archives-2 ul li a {
         font-family: "Lato", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #68956a;
         font-size: 14px;
@@ -11241,7 +11253,9 @@ img.border {
         -ms-transition: all, 0.15s, ease-in-out, 0.5s;
         -o-transition: all, 0.15s, ease-in-out, 0.5s;
         transition: all, 0.15s, ease-in-out, 0.5s; }
-        #recent-posts-2 ul li a:hover, #categories-2 ul li a:hover, #archives-2 ul li a:hover {
+        #recent-posts-2 ul li a:hover,
+        #categories-2 ul li a:hover,
+        #archives-2 ul li a:hover {
           -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
           -moz-transition: all, 0.15s, ease-in-out, 0.5s;
           -ms-transition: all, 0.15s, ease-in-out, 0.5s;
@@ -11260,7 +11274,8 @@ img.border {
     #gform_widget-2 .gform_wrapper ul.gform_fields li.gfield {
       padding-right: 0;
       margin-top: 0; }
-    #gform_widget-2 .gform_wrapper input, #gform_widget-2 .gform_wrapper textarea {
+    #gform_widget-2 .gform_wrapper input,
+    #gform_widget-2 .gform_wrapper textarea {
       background: #dadada;
       color: #000 !important;
       border: 1px solid rgba(0, 0, 0, 0.3);
@@ -11278,7 +11293,8 @@ img.border {
       font-size: 0.75rem;
       line-height: 1.43;
       margin-top: 5px; }
-    #gform_widget-2 .gform_wrapper input::-webkit-input-placeholder, #gform_widget-2 .gform_wrapper textarea::-webkit-input-placeholder {
+    #gform_widget-2 .gform_wrapper input::-webkit-input-placeholder,
+    #gform_widget-2 .gform_wrapper textarea::-webkit-input-placeholder {
       color: #000; }
   #gform_widget-2 h3 {
     margin: 0;
@@ -11294,8 +11310,12 @@ img.border {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    @incude justify-content(center); }
-    #gform_widget-2 .gform_footer input[type="submit"] {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+    #gform_widget-2 .gform_footer input[type='submit'] {
       font-size: 12px !important;
       font-size: 12px !important/16pxrem;
       line-height: 1.43;
@@ -11322,7 +11342,7 @@ img.border {
       line-height: 100%;
       max-width: 100% !important;
       margin: 0 auto; }
-      #gform_widget-2 .gform_footer input[type="submit"]:hover {
+      #gform_widget-2 .gform_footer input[type='submit']:hover {
         -webkit-transition: all, 0.15s, ease-in-out, 0.5s;
         -moz-transition: all, 0.15s, ease-in-out, 0.5s;
         -ms-transition: all, 0.15s, ease-in-out, 0.5s;
@@ -11336,7 +11356,7 @@ img.border {
         -ms-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
         -o-text-shadow: 0 1px rgba(255, 255, 255, 0.5);
         text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
-      #gform_widget-2 .gform_footer input[type="submit"]:hover {
+      #gform_widget-2 .gform_footer input[type='submit']:hover {
         color: #000 !important; }
 
 #nav_menu-3 ul {
@@ -11355,7 +11375,7 @@ img.border {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     #nav_menu-3 ul li:nth-of-type(odd) {
       border-right: 1px solid rgba(0, 0, 0, 0.1); }
-    #nav_menu-3 ul li:nth-last-child(-n+2) {
+    #nav_menu-3 ul li:nth-last-child(-n + 2) {
       border-bottom: none; }
     #nav_menu-3 ul li a {
       font-family: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11438,7 +11458,7 @@ img.border {
 .single-blog p {
   margin-bottom: 20px; }
 
-.article {
+.blog-article {
   background: #fff;
   padding: 10px;
   margin: 20px auto;
@@ -11454,18 +11474,18 @@ img.border {
 	 * added to an article to prevent
 	 * style conflicts
 	 */ }
-  .article div {
+  .blog-article div {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 40px; }
-  .article p a {
+  .blog-article p a {
     font-weight: 700;
     color: #68956a; }
-    .article p a:hover {
+    .blog-article p a:hover {
       color: #39443d; }
-  .article.seven-myths-about-dental-care ol {
+  .blog-article.seven-myths-about-dental-care ol {
     padding: 20px 0 20px 35px;
     margin: 0; }
-    .article.seven-myths-about-dental-care ol li {
+    .blog-article.seven-myths-about-dental-care ol li {
       font-size: 42px;
       font-size: 2.625rem;
       line-height: 1.43;
@@ -11473,21 +11493,21 @@ img.border {
       color: #a39578;
       font-family: "Volkhov", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
       @media (max-width: 767px) {
-        .article.seven-myths-about-dental-care ol li {
+        .blog-article.seven-myths-about-dental-care ol li {
           font-size: 22px;
           font-size: 1.375rem;
           line-height: 1.43; } }
-      .article.seven-myths-about-dental-care ol li p {
+      .blog-article.seven-myths-about-dental-care ol li p {
         font-size: 18px;
         font-size: 1.125rem;
         line-height: 160%;
         color: rgba(0, 0, 0, 0.5); }
         @media (max-width: 767px) {
-          .article.seven-myths-about-dental-care ol li p {
+          .blog-article.seven-myths-about-dental-care ol li p {
             font-size: 16px;
             font-size: 1rem;
             line-height: 130%; } }
-  .article.invisalign-vs-braces h2 {
+  .blog-article.invisalign-vs-braces h2 {
     text-align: center;
     color: #a39578;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -11497,7 +11517,7 @@ img.border {
     font-size: 50px;
     font-size: 3.125rem;
     line-height: 100%; }
-  .article.invisalign-vs-braces p strong {
+  .blog-article.invisalign-vs-braces p strong {
     display: block;
     font-size: 20px;
     font-size: 1.25rem;
@@ -11505,23 +11525,23 @@ img.border {
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-  .article.invisalign-vs-braces p:nth-of-type(odd) {
+  .blog-article.invisalign-vs-braces p:nth-of-type(odd) {
     margin-top: 10px; }
-  .article.invisalign-vs-braces h3 {
+  .blog-article.invisalign-vs-braces h3 {
     margin-top: 50px; }
-  .article.invisalign-vs-braces img.border {
+  .blog-article.invisalign-vs-braces img.border {
     border: 1px solid rgba(0, 0, 0, 0.1); }
-  .article.root-canals-pros-cons h2 {
+  .blog-article.root-canals-pros-cons h2 {
     text-align: center;
     color: #a39578;
     padding: 20px 0;
     margin: 20px auto 0 auto;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  .article.root-canals-pros-cons ul {
+  .blog-article.root-canals-pros-cons ul {
     margin: 0;
     padding: 15px 0; }
-    .article.root-canals-pros-cons ul li {
+    .blog-article.root-canals-pros-cons ul li {
       color: #39443d;
       margin: 5px 0; }
 
