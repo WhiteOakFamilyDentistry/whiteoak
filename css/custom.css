@@ -11475,7 +11475,7 @@ img.border {
 	 * style conflicts
 	 */ }
   .blog-article div {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(112, 102, 102, 0.1);
     padding: 40px; }
   .blog-article p a {
     font-weight: 700;
@@ -11489,6 +11489,12 @@ img.border {
     margin: 20px auto 0 auto;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .blog-article p.emphasis {
+    font-style: italic;
+    color: #a39578;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 180%; }
   .blog-article ul {
     margin: 0;
     padding: 15px 0; }

@@ -2,536 +2,545 @@
 
 //BLOGROLL STYLES
 .blog-post {
-	padding: 30px 15px;
-	h2 {
-		text-align: center;
-		a {
-			color: $green;
-			@include transition($smooth);
-			@include text-shadow($letterpress);
-			&:hover {
-				@include transition($smooth);
-				color: $dkgreen;
-			}
-		}
-	}
-	.postmeta {
-		text-align: center;
-		padding: 10px 0;
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		margin-bottom: 20px;
-		@include font-size(14px);
-		a {
-			color: $dkgreen;
-			font-weight: 700;
-			@include transition($smooth);
-			&:hover {
-				@include transition($smooth);
-				color: $green;
-			}
-		}
-	}
-	img {
-		background: #fff;
-		padding: 5px;
-		border: 1px solid rgba(0, 0, 0, 0.2);
-	}
-	.post {
-		margin-bottom: 40px;
-		padding: 15px;
-		background: rgba(255, 255, 255, 0.3);
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		.moretag {
-			display: block;
-			color: $green;
-			padding: 15px 0;
-			@include text-shadow($letterpress);
-			@include transition($smooth);
-			&:hover {
-				@include transition($smooth);
-				color: $dkgreen;
-			}
-		}
-	}
+  padding: 30px 15px;
+  h2 {
+    text-align: center;
+    a {
+      color: $green;
+      @include transition($smooth);
+      @include text-shadow($letterpress);
+      &:hover {
+        @include transition($smooth);
+        color: $dkgreen;
+      }
+    }
+  }
+  .postmeta {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    @include font-size(14px);
+    a {
+      color: $dkgreen;
+      font-weight: 700;
+      @include transition($smooth);
+      &:hover {
+        @include transition($smooth);
+        color: $green;
+      }
+    }
+  }
+  img {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .post {
+    margin-bottom: 40px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    .moretag {
+      display: block;
+      color: $green;
+      padding: 15px 0;
+      @include text-shadow($letterpress);
+      @include transition($smooth);
+      &:hover {
+        @include transition($smooth);
+        color: $dkgreen;
+      }
+    }
+  }
 }
 //PAGINATION STYLES
 .page_nav {
-	font-family: $heading-font;
-	font-weight: 700;
-	@include font-size(16px);
-	color: $brown;
-	a {
-		color: $green;
-		background: #fff;
-		display: inline-block;
-		padding: 5px;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		@include transition($smooth);
-		&:hover {
-			@include transition($smooth);
-			background: $brown;
-			color: #fff;
-			border: 1px solid rgba(255, 255, 255, 0.5);
-		}
-	}
+  font-family: $heading-font;
+  font-weight: 700;
+  @include font-size(16px);
+  color: $brown;
+  a {
+    color: $green;
+    background: #fff;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include transition($smooth);
+    &:hover {
+      @include transition($smooth);
+      background: $brown;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
 }
 //BLOG SIDEBAR & WIDGETS
 #blog-sidebar {
-	h3 {
-		text-align: center;
-	}
-	.widget {
-		margin-bottom: 30px;
-	}
+  h3 {
+    text-align: center;
+  }
+  .widget {
+    margin-bottom: 30px;
+  }
 }
 #recent-posts-2,
 #categories-2,
 #archives-2 {
-	background: #fff;
-	border: 1px solid $green;
-	h3 {
-		background: $green;
-		padding: 10px 0;
-		margin: 0;
-		color: #fff;
-		text-align: center;
-		@include text-shadow($drop);
-	}
-	ul {
-		padding: 10px 20px 0 20px;
-		li {
-			list-style-type: none;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-			&:last-of-type {
-				border: none;
-			}
-			a {
-				font-family: $body-font;
-				color: $green;
-				@include font-size(14px);
-				padding: 10px 0;
-				display: block;
-				@include transition($smooth);
-				&:hover {
-					@include transition($smooth);
-					color: $dkgreen;
-				}
-			}
-		}
-	}
+  background: #fff;
+  border: 1px solid $green;
+  h3 {
+    background: $green;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    @include text-shadow($drop);
+  }
+  ul {
+    padding: 10px 20px 0 20px;
+    li {
+      list-style-type: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      &:last-of-type {
+        border: none;
+      }
+      a {
+        font-family: $body-font;
+        color: $green;
+        @include font-size(14px);
+        padding: 10px 0;
+        display: block;
+        @include transition($smooth);
+        &:hover {
+          @include transition($smooth);
+          color: $dkgreen;
+        }
+      }
+    }
+  }
 }
 #gform_widget-2 {
-	background: none #fff;
-	border-radius: 5px;
-	border: 1px solid $blk30;
-	.gform_wrapper {
-		border: none;
-		margin: 0;
-		padding-top: 0;
-		ul {
-			&.gform_fields {
-				li {
-					&.gfield {
-						padding-right: 0;
-						margin-top: 0;
-					}
-				}
-			}
-		}
-		input,
-		textarea {
-			background: $gray;
-			color: #000 !important;
-			border: 1px solid $blk30;
-			@include font-size(12px !important);
-		}
-		textarea {
-			margin-top: 10px;
-		}
-		.top_label {
-			div {
-				&.ginput_container {
-					margin-top: 0;
-				}
-			}
-			li {
-				&.gfield {
-					&.gf_left_half {
-						padding-right: 5px;
-					}
-				}
-			}
-		}
-		.ginput_container {
-			select {
-				@include font-size(12px);
-				margin-top: 5px;
-			}
-		}
-		input::-webkit-input-placeholder,
-		textarea::-webkit-input-placeholder {
-			color: #000;
-		}
-	}
-	h3 {
-		margin: 0;
-		padding: 10px 0;
-	}
-	.gform_footer {
-		padding: 0 15px !important;
-		@include flexbox;
-		@include align-items(center);
-		@include justify-content(center);
-		input[type='submit'] {
-			@include font-size(12px !important);
-			@include green-button;
-			background: $green;
-			color: #fff !important;
-			line-height: 100%;
-			max-width: 100% !important;
-			margin: 0 auto;
-			&:hover {
-				color: #000 !important;
-			}
-		}
-	}
+  background: none #fff;
+  border-radius: 5px;
+  border: 1px solid $blk30;
+  .gform_wrapper {
+    border: none;
+    margin: 0;
+    padding-top: 0;
+    ul {
+      &.gform_fields {
+        li {
+          &.gfield {
+            padding-right: 0;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    input,
+    textarea {
+      background: $gray;
+      color: #000 !important;
+      border: 1px solid $blk30;
+      @include font-size(12px !important);
+    }
+    textarea {
+      margin-top: 10px;
+    }
+    .top_label {
+      div {
+        &.ginput_container {
+          margin-top: 0;
+        }
+      }
+      li {
+        &.gfield {
+          &.gf_left_half {
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+    .ginput_container {
+      select {
+        @include font-size(12px);
+        margin-top: 5px;
+      }
+    }
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+      color: #000;
+    }
+  }
+  h3 {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .gform_footer {
+    padding: 0 15px !important;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    input[type='submit'] {
+      @include font-size(12px !important);
+      @include green-button;
+      background: $green;
+      color: #fff !important;
+      line-height: 100%;
+      max-width: 100% !important;
+      margin: 0 auto;
+      &:hover {
+        color: #000 !important;
+      }
+    }
+  }
 }
 #nav_menu-3 {
-	ul {
-		text-align: center;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		padding: 0;
-		margin: 0;
-		display: inline-flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		li {
-			width: 50%;
-			list-style-type: none;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-			&:nth-of-type(odd) {
-				border-right: 1px solid rgba(0, 0, 0, 0.1);
-			}
-			&:nth-last-child(-n + 2) {
-				border-bottom: none;
-			}
-			a {
-				font-family: $heading-font;
-				@include font-size(16px);
-				padding: 5px;
-				display: block;
-				color: $green;
-				@include text-shadow($letterpress);
-				@include transition($smooth);
-				&:hover {
-					@include transition($smooth);
-					background: #fff;
-					color: $dkgreen;
-					@include text-shadow(none);
-				}
-			}
-		}
-	}
+  ul {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    li {
+      width: 50%;
+      list-style-type: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      &:nth-of-type(odd) {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      &:nth-last-child(-n + 2) {
+        border-bottom: none;
+      }
+      a {
+        font-family: $heading-font;
+        @include font-size(16px);
+        padding: 5px;
+        display: block;
+        color: $green;
+        @include text-shadow($letterpress);
+        @include transition($smooth);
+        &:hover {
+          @include transition($smooth);
+          background: #fff;
+          color: $dkgreen;
+          @include text-shadow(none);
+        }
+      }
+    }
+  }
 }
 .wp-video {
-	iframe {
-		padding: 10px;
-		background: #fff;
-		border: 1px solid rgba(0, 0, 0, 0.2);
-	}
+  iframe {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
 }
 //SINGLE POST STYLES
 .single-blog {
-	header {
-		text-align: center;
-		max-width: 1170px;
-		margin: 30px auto;
-		padding: 20px 5px;
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		@include box-shadow(
-			0 -1px 0 0 rgba(255, 255, 255, 0.5),
-			0 1px 0 0 rgba(255, 255, 255, 0.5)
-		);
-		h2 {
-			color: $green;
-			@include text-shadow($letterpress);
-			@include font-size(36px);
-			margin-top: 0;
-		}
-		h3 {
-			margin-bottom: 0;
-			font-family: $body-font;
-			color: $dkgray;
-			@include font-size(16px);
-			font-weight: 400;
-			@include text-shadow(none);
-			a {
-				color: $green;
-				&:hover {
-					color: $brown;
-				}
-			}
-		}
-	}
-	p {
-		margin-bottom: 20px;
-	}
+  header {
+    text-align: center;
+    max-width: 1170px;
+    margin: 30px auto;
+    padding: 20px 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    @include box-shadow(
+      0 -1px 0 0 rgba(255, 255, 255, 0.5),
+      0 1px 0 0 rgba(255, 255, 255, 0.5)
+    );
+    h2 {
+      color: $green;
+      @include text-shadow($letterpress);
+      @include font-size(36px);
+      margin-top: 0;
+    }
+    h3 {
+      margin-bottom: 0;
+      font-family: $body-font;
+      color: $dkgray;
+      @include font-size(16px);
+      font-weight: 400;
+      @include text-shadow(none);
+      a {
+        color: $green;
+        &:hover {
+          color: $brown;
+        }
+      }
+    }
+  }
+  p {
+    margin-bottom: 20px;
+  }
 }
 .blog-article {
-	background: #fff;
-	padding: 10px;
-	margin: 20px auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	@include box-shadow(0 0 10px 5px rgba(0, 0, 0, 0.1));
-	div {
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		padding: 40px;
-	}
-	p {
-		a {
-			font-weight: 700;
-			color: $green;
-			&:hover {
-				color: $dkgreen;
-			}
-		}
-	}
+  background: #fff;
+  padding: 10px;
+  margin: 20px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  @include box-shadow(0 0 10px 5px rgba(0, 0, 0, 0.1));
+  div {
+    border: 1px solid rgba(112, 102, 102, 0.1);
+    padding: 40px;
+  }
+  p {
+    a {
+      font-weight: 700;
+      color: $green;
+      &:hover {
+        color: $dkgreen;
+      }
+    }
+  }
 
-	//------------------
-	// Global Styles
-	//------------------
+  //------------------
+  // Global Styles
+  //------------------
 
-	h2 {
-		&.inner-header {
-			text-align: center;
-			color: $brown;
-			padding: 20px 0;
-			margin: 20px auto 0 auto;
-			border-top: 1px solid $blk10;
-			border-bottom: 1px solid $blk10;
-		}
-	}
+  h2 {
+    &.inner-header {
+      text-align: center;
+      color: $brown;
+      padding: 20px 0;
+      margin: 20px auto 0 auto;
+      border-top: 1px solid $blk10;
+      border-bottom: 1px solid $blk10;
+    }
+  }
 
-	ul {
-		margin: 0;
-		padding: 15px 0;
-		li {
-			color: $dkgreen;
-			margin: 5px 0;
-		}
-	}
+  p {
+    &.emphasis {
+      font-style: italic;
+      color: $brown;
+      //font-weight: 700;
+      @include font-size(18px, 180%);
+    }
+  }
 
-	.divider {
-		padding-bottom: 20px;
-		margin-bottom: 20px;
-		border-bottom: 1px solid $blk10;
-		@include font-size(26px);
-		color: $green;
-	}
+  ul {
+    margin: 0;
+    padding: 15px 0;
+    li {
+      color: $dkgreen;
+      margin: 5px 0;
+    }
+  }
 
-	ol {
-		padding: 20px 0 20px 35px;
-		margin: 0;
-		li {
-			@include font-size(42px);
-			margin: 10px 0;
-			color: $brown;
-			font-family: $heading-font;
-			@include breakpoint(sm) {
-				@include font-size(22px);
-			}
-			p {
-				@include font-size(18px, 160%);
-				color: $blk50;
-				@include breakpoint(sm) {
-					@include font-size(16px, 130%);
-				}
-			}
-		}
-	}
+  .divider {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $blk10;
+    @include font-size(26px);
+    color: $green;
+  }
 
-	//=======================================
-	// CUSTOM STYLES FOR INDIVIDUAL POSTS
-	//=======================================
+  ol {
+    padding: 20px 0 20px 35px;
+    margin: 0;
+    li {
+      @include font-size(42px);
+      margin: 10px 0;
+      color: $brown;
+      font-family: $heading-font;
+      @include breakpoint(sm) {
+        @include font-size(22px);
+      }
+      p {
+        @include font-size(18px, 160%);
+        color: $blk50;
+        @include breakpoint(sm) {
+          @include font-size(16px, 130%);
+        }
+      }
+    }
+  }
 
-	/**
+  //=======================================
+  // CUSTOM STYLES FOR INDIVIDUAL POSTS
+  //=======================================
+
+  /**
 	 * The styles below pertain to specific
 	 * blog posts. A class is automatically
 	 * added to an article to prevent
 	 * style conflicts
 	 */
 
-	//--------------------------------------
-	// 7 Myths About Dental Care (10/31/18)
-	//--------------------------------------
+  //--------------------------------------
+  // 7 Myths About Dental Care (10/31/18)
+  //--------------------------------------
 
-	&.seven-myths-about-dental-care {
-		ol {
-			padding: 20px 0 20px 35px;
-			margin: 0;
-			li {
-				@include font-size(42px);
-				margin: 10px 0;
-				color: $brown;
-				font-family: $heading-font;
-				@include breakpoint(sm) {
-					@include font-size(22px);
-				}
-				p {
-					@include font-size(18px, 160%);
-					color: $blk50;
-					@include breakpoint(sm) {
-						@include font-size(16px, 130%);
-					}
-				}
-			}
-		}
-	}
+  &.seven-myths-about-dental-care {
+    ol {
+      padding: 20px 0 20px 35px;
+      margin: 0;
+      li {
+        @include font-size(42px);
+        margin: 10px 0;
+        color: $brown;
+        font-family: $heading-font;
+        @include breakpoint(sm) {
+          @include font-size(22px);
+        }
+        p {
+          @include font-size(18px, 160%);
+          color: $blk50;
+          @include breakpoint(sm) {
+            @include font-size(16px, 130%);
+          }
+        }
+      }
+    }
+  }
 
-	//--------------------------------------
-	// Invisalign vs. Braces 11/15/18)
-	//--------------------------------------
+  //--------------------------------------
+  // Invisalign vs. Braces 11/15/18)
+  //--------------------------------------
 
-	&.invisalign-vs-braces {
-		h2 {
-			text-align: center;
-			color: $brown;
-			border-top: 1px solid $blk10;
-			border-bottom: 1px solid $blk10;
-			padding: 15px;
-			margin: 40px auto;
-			@include font-size(50px, 100%);
-		}
-		p {
-			strong {
-				display: block;
-				@include font-size(20px);
-				margin-bottom: 10px;
-				padding-bottom: 10px;
-				border-bottom: 1px solid $blk30;
-			}
-			&:nth-of-type(odd) {
-				margin-top: 10px;
-			}
-		}
-		h3 {
-			margin-top: 50px;
-		}
-		img {
-			&.border {
-				border: 1px solid $blk10;
-			}
-		}
-	}
+  &.invisalign-vs-braces {
+    h2 {
+      text-align: center;
+      color: $brown;
+      border-top: 1px solid $blk10;
+      border-bottom: 1px solid $blk10;
+      padding: 15px;
+      margin: 40px auto;
+      @include font-size(50px, 100%);
+    }
+    p {
+      strong {
+        display: block;
+        @include font-size(20px);
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $blk30;
+      }
+      &:nth-of-type(odd) {
+        margin-top: 10px;
+      }
+    }
+    h3 {
+      margin-top: 50px;
+    }
+    img {
+      &.border {
+        border: 1px solid $blk10;
+      }
+    }
+  }
 
-	//------------------------------------
-	// Root Canals Pros & Cons
-	//------------------------------------
+  //------------------------------------
+  // Root Canals Pros & Cons
+  //------------------------------------
 
-	&.root-canals-pros-cons {
-		h2 {
-			text-align: center;
-			color: $brown;
-			padding: 20px 0;
-			margin: 20px auto 0 auto;
-			border-top: 1px solid $blk10;
-			border-bottom: 1px solid $blk10;
-		}
-		ul {
-			margin: 0;
-			padding: 15px 0;
-			li {
-				color: $dkgreen;
-				margin: 5px 0;
-			}
-		}
-	}
+  &.root-canals-pros-cons {
+    h2 {
+      text-align: center;
+      color: $brown;
+      padding: 20px 0;
+      margin: 20px auto 0 auto;
+      border-top: 1px solid $blk10;
+      border-bottom: 1px solid $blk10;
+    }
+    ul {
+      margin: 0;
+      padding: 15px 0;
+      li {
+        color: $dkgreen;
+        margin: 5px 0;
+      }
+    }
+  }
 }
 .author-bio {
-	margin: 30px auto 50px auto;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	@include box-shadow(
-		0 -1px 0 0 rgba(255, 255, 255, 0.5),
-		0 1px 0 0 rgba(255, 255, 255, 0.5)
-	);
-	padding: 20px 5px;
+  margin: 30px auto 50px auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  @include box-shadow(
+    0 -1px 0 0 rgba(255, 255, 255, 0.5),
+    0 1px 0 0 rgba(255, 255, 255, 0.5)
+  );
+  padding: 20px 5px;
 }
 
 /***************************************************/
 /****************** RESPONSIVE STYLES **************/
 /***************************************************/
 @media only screen and (max-width: 767px) {
-	.single-blog {
-		header {
-			h2 {
-				@include font-size(28px);
-			}
-			h3 {
-				@include font-size(14px);
-				margin-top: 0;
-			}
-		}
-	}
-	.author-bio {
-		text-align: center;
-	}
+  .single-blog {
+    header {
+      h2 {
+        @include font-size(28px);
+      }
+      h3 {
+        @include font-size(14px);
+        margin-top: 0;
+      }
+    }
+  }
+  .author-bio {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 600px) {
-	.blog-post {
-		.postmeta {
-			@include font-size(12px);
-		}
-		.moretag {
-			text-align: center;
-		}
-		img {
-			display: none;
-		}
-	}
-	.single-blog {
-		header {
-			h2 {
-				@include font-size(22px);
-			}
-			h3 {
-				@include font-size(12px);
-			}
-		}
-	}
-	.postmeta {
-		line-height: 130%;
-	}
-	.article {
-		div {
-			padding: 15px;
-		}
-		h3 {
-			@include font-size(18px);
-		}
-	}
-	.author-bio {
-		margin: 20px auto;
-		h3 {
-			@include font-size(22px);
-		}
-	}
+  .blog-post {
+    .postmeta {
+      @include font-size(12px);
+    }
+    .moretag {
+      text-align: center;
+    }
+    img {
+      display: none;
+    }
+  }
+  .single-blog {
+    header {
+      h2 {
+        @include font-size(22px);
+      }
+      h3 {
+        @include font-size(12px);
+      }
+    }
+  }
+  .postmeta {
+    line-height: 130%;
+  }
+  .article {
+    div {
+      padding: 15px;
+    }
+    h3 {
+      @include font-size(18px);
+    }
+  }
+  .author-bio {
+    margin: 20px auto;
+    h3 {
+      @include font-size(22px);
+    }
+  }
 }
 @media only screen and (max-width: 375px) {
-	.single-blog {
-		header {
-			padding: 10px;
-			h2 {
-				@include font-size(20px);
-				line-height: 130%;
-			}
-			h3 {
-				@include font-size(12px);
-			}
-		}
-	}
+  .single-blog {
+    header {
+      padding: 10px;
+      h2 {
+        @include font-size(20px);
+        line-height: 130%;
+      }
+      h3 {
+        @include font-size(12px);
+      }
+    }
+  }
 }

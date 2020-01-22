@@ -15,19 +15,21 @@
     <section class="container single-blog">
         <div class="row">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <header>
-                        <h2><?php the_field('sub_heading'); ?></h2>
-                        <h3 class="postmeta">Posted on <span class="date"><?php the_date(); ?></span> by <span class="author"><?php the_author(); ?> </a> in <span class="category"><?php the_category(', '); ?></span></h3>
-                    </header>
-                    <?php
+            <header>
+                <h2><?php the_field('sub_heading'); ?></h2>
+                <h3 class="postmeta">Posted on <span class="date"><?php the_date(); ?></span> by <span
+                        class="author"><?php the_author(); ?> </a> in <span
+                            class="category"><?php the_category(', '); ?></span></h3>
+            </header>
+            <?php
                             /* Get page slug to provide unique class for each post*/
                             $slug = get_post_field('post_name', get_post());
                             ?>
-                    <article class="blog-article <?php echo $slug; ?>">
-                        <div>
-                            <?php the_content(); ?>
-                        </div>
-                    </article>
+            <article class="blog-article <?php echo $slug; ?>">
+                <div>
+                    <?php the_content(); ?>
+                </div>
+            </article>
         </div>
         <!--BEGIN .author-bio-->
         <div class="row author-bio">
@@ -42,10 +44,10 @@
             </div>
             <!--END .author-bio-->
         </div>
-    <?php endwhile; ?>
-<?php else : ?>
-    <?php get_404_template(); ?>
-<?php endif; ?>
+        <?php endwhile; ?>
+        <?php else : ?>
+        <?php get_404_template(); ?>
+        <?php endif; ?>
     </section>
     <!--.container-->
 </article>
