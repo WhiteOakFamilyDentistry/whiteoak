@@ -1,131 +1,139 @@
 /*** HOMEPAGE STYLES ***/
 
+/* Temp Banner */
 
 #hero {
-	&.home {
-		background: url(../images/hero-home.jpg) no-repeat 50% 100%;
-		@include background-size(cover);
-		height: 475px;
-		@include breakpoint(md) {
-			height: auto;
-			margin-top: 300px;
-		}
-		@include breakpoint(sm) {
-			margin-top: 165px;
-		}
-		@include breakpoint(0, 400px) {
-			margin-top: 153px;
-		}
-		h1 {
-			@include font-size(75px);
-			@include breakpoint(855px, 1065px) {
-				@include font-size(60px);
-			}
-			@include breakpoint(767px, 855px) {
-				@include font-size(42px);
-			}
-			@include breakpoint(610px, 767px) {
-				@include font-size(32px);
-			}
-			@include breakpoint(480px, 610px) {
-				@include font-size(26px);
-			}
-			@include breakpoint(0, 480px) {
-				@include font-size(20px);
-			}
-		}
-		h2 {
-			text-transform: uppercase;
-			@include font-size(42px);
-			font-weight: 400;
-			@include breakpoint(995px, 1065px) {
-				@include font-size(36px);
-			}
-			@include breakpoint(767px, 855px) {
-				@include font-size(28px);
-			}
-			@include breakpoint(610px, 767px) {
-				@include font-size(22px);
-			}
-			@include breakpoint(480px, 610px) {
-				@include font-size(16px);
-			}
-			@include breakpoint(0, 480px) {
-				@include font-size(12px);
-				margin-top: 5px;
-			}
-		}
-	}
+  &.home {
+    background: url(../images/hero-home.jpg) no-repeat 50% 100%;
+    @include background-size(cover);
+    height: 475px;
+    position: relative;
+    @include breakpoint(md) {
+      height: auto;
+      margin-top: 300px;
+    }
+    @include breakpoint(sm) {
+      margin-top: 165px;
+    }
+    @include breakpoint(0, 400px) {
+      margin-top: 153px;
+    }
+
+    /* Temp Styes Remove after COVID-19 */
+    header {
+      background: none $blk50;
+      padding: 20px;
+      border: 1px solid $wht20;
+    }
+    h1 {
+      @include font-size(75px);
+      @include breakpoint(855px, 1065px) {
+        @include font-size(60px);
+      }
+      @include breakpoint(767px, 855px) {
+        @include font-size(42px);
+      }
+      @include breakpoint(610px, 767px) {
+        @include font-size(32px);
+      }
+      @include breakpoint(480px, 610px) {
+        @include font-size(26px);
+      }
+      @include breakpoint(0, 480px) {
+        @include font-size(20px);
+      }
+    }
+    h2 {
+      text-transform: uppercase;
+      @include font-size(42px);
+      font-weight: 400;
+      @include breakpoint(995px, 1065px) {
+        @include font-size(36px);
+      }
+      @include breakpoint(767px, 855px) {
+        @include font-size(28px);
+      }
+      @include breakpoint(610px, 767px) {
+        @include font-size(22px);
+      }
+      @include breakpoint(480px, 610px) {
+        @include font-size(16px);
+      }
+      @include breakpoint(0, 480px) {
+        @include font-size(12px);
+        margin-top: 5px;
+      }
+    }
+  }
 }
 #home-content {
-	padding: 40px 0;
-	@include breakpoint(sm) {
-		padding: 10px 0;
-	}
-	h3 {
-		text-align: center;
-		@include breakpoint(0, 375px) {
-			@include font-size(18px);
-		}
-	}
-	.col-md-6 {
-		p {
-			a {
-				color: $dkgreen;
-				font-weight: 700;
-				&:hover {
-					text-decoration: underline;
-				}
-
-			}
-		}
-	}
-	.col-md-12 {
-		background: $brown;
-		padding: 15px;
-		margin-top: 40px;
-		@include breakpoint(md) {
-			margin-top: 10px;
-		}
-		@include breakpoint(0, 375px) {
-			a {
-				@include font-size(18px);
-			}
-		}
-		* {
-			color: #fff;
-			@include text-shadow($drop);
-		}
-		h3 {
-			margin-bottom: 20px;
-		}
-		div {
-			&.home-schedule {
-				padding: 20px;
-				border: 1px solid rgba(0, 0, 0, 0.1);
-				@include box-shadow(0 0 1px 1px rgba(255, 255, 255, 0.2));
-				@include breakpoint(md) {
-					h3 {
-						@include font-size(20px, 150%);
-					}
-				}
-				@include breakpoint(0, 480px) {
-					h3 {
-						margin-top: 0;
-					}
-				}
-				a {
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-		.centered {
-			a {
-				@include green-button;
-				margin-top: 20px;
-			}
-		}
-	}
+  padding: 40px 0;
+  @include breakpoint(sm) {
+    padding: 10px 0;
+  }
+  h3 {
+    text-align: center;
+    @include breakpoint(0, 375px) {
+      @include font-size(18px);
+    }
+  }
+  .col-md-6 {
+    p {
+      a {
+        color: $dkgreen;
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .col-md-12 {
+    background: $brown;
+    padding: 15px;
+    margin-top: 40px;
+    @include breakpoint(md) {
+      margin-top: 10px;
+    }
+    @include breakpoint(0, 375px) {
+      a {
+        @include font-size(18px);
+      }
+    }
+    * {
+      color: #fff;
+      @include text-shadow($drop);
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    div {
+      &.home-schedule {
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        @include box-shadow(0 0 1px 1px rgba(255, 255, 255, 0.2));
+        @include breakpoint(md) {
+          h3 {
+            @include font-size(20px, 150%);
+          }
+        }
+        @include breakpoint(0, 480px) {
+          h3 {
+            margin-top: 0;
+          }
+        }
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .centered {
+      a {
+        @include green-button;
+        margin-top: 20px;
+      }
+    }
+  }
 }

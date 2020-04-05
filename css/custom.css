@@ -10651,6 +10651,7 @@ img.border {
 
 /*** INDIVIDUAL PAGE STYLES ***/
 /*** HOMEPAGE STYLES ***/
+/* Temp Banner */
 #hero.home {
   background: url(../images/hero-home.jpg) no-repeat 50% 100%;
   -webkit-background-size: cover;
@@ -10658,7 +10659,9 @@ img.border {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 475px; }
+  height: 475px;
+  position: relative;
+  /* Temp Styes Remove after COVID-19 */ }
   @media (max-width: 991px) {
     #hero.home {
       height: auto;
@@ -10669,6 +10672,10 @@ img.border {
   @media (max-width: 400px) {
     #hero.home {
       margin-top: 153px; } }
+  #hero.home header {
+    background: none rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); }
   #hero.home h1 {
     font-size: 75px;
     font-size: 4.6875rem;
