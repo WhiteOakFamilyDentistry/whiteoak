@@ -3,12 +3,11 @@
 <article id="homepage">
 
     <section id="hero" class="home">
-        <!--
         <header>
             <h1>Family Dentist in Garner, NC</h1>
             <h2>Welcome to White Oak Family Dentistry</h2>
         </header>
-	-->
+        <!--
         <header>
             <h1>COVID-19</h1>
             <h2>We are open for emergency treatment</h2>
@@ -23,6 +22,7 @@
                 all of our patients seen as soon as possible.</p>
 
         </header>
+        -->
 
     </section>
     <section id="home-content">
