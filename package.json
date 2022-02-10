@@ -35,6 +35,6 @@
   "dependencies": {
     "gulp-cli": "^2.3.0",
     "lodash.template": ">=4.5.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
